@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
-    "sessionId": "799e5a55-6fbe-4776-ae12-7b244e49c4ba",
-    "updatedAt": 1770309408247,
+    "sessionId": "6e0ea682-df1d-493c-aace-cae8ca8a5745",
+    "updatedAt": 1772129088205,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -14,27 +14,40 @@
       "surface": "webchat",
       "chatType": "direct"
     },
-    "sessionFile": "/workspace/projects/agents/main/sessions/799e5a55-6fbe-4776-ae12-7b244e49c4ba.jsonl",
+    "sessionFile": "/workspace/projects/agents/main/sessions/6e0ea682-df1d-493c-aace-cae8ca8a5745.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>bluebubbles</name>\n    <description>Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).</description>\n    <location>/usr/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coze-image-gen</name>\n    <description>Generate high-quality images (2K/4K) via coze-coding-dev-sdk. Returns image URLs directly without downloading.</description>\n    <location>/workspace/projects/workspace/skills/coze-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coze-voice-gen</name>\n    <description>Text-to-Speech (TTS) and Speech-to-Text (ASR) using coze-coding-dev-sdk. Returns results directly to stdout.</description>\n    <location>/workspace/projects/workspace/skills/coze-voice-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coze-web-search</name>\n    <description>Search the web using coze-coding-dev-sdk. Supports web search, image search, AI summaries, time filters, and site restrictions.</description>\n    <location>/workspace/projects/workspace/skills/coze-web-search/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
-          "name": "bluebubbles"
+          "name": "healthcheck"
         },
         {
           "name": "skill-creator"
         },
         {
-          "name": "weather"
+          "name": "weather",
+          "requiredEnv": []
+        },
+        {
+          "name": "coze-image-gen",
+          "requiredEnv": []
+        },
+        {
+          "name": "coze-voice-gen",
+          "requiredEnv": []
+        },
+        {
+          "name": "coze-web-search",
+          "requiredEnv": []
         }
       ],
       "resolvedSkills": [
         {
-          "name": "bluebubbles",
-          "description": "Build or update the BlueBubbles external channel plugin for OpenClaw (extension package, REST send/probe, webhook inbound).",
-          "filePath": "/usr/lib/node_modules/openclaw/skills/bluebubbles/SKILL.md",
-          "baseDir": "/usr/lib/node_modules/openclaw/skills/bluebubbles",
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/usr/lib/node_modules/openclaw/skills/healthcheck",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
@@ -48,54 +61,75 @@
         },
         {
           "name": "weather",
-          "description": "Get current weather and forecasts (no API key required).",
+          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
           "filePath": "/usr/lib/node_modules/openclaw/skills/weather/SKILL.md",
           "baseDir": "/usr/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coze-image-gen",
+          "description": "Generate high-quality images (2K/4K) via coze-coding-dev-sdk. Returns image URLs directly without downloading.",
+          "filePath": "/workspace/projects/workspace/skills/coze-image-gen/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/coze-image-gen",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coze-voice-gen",
+          "description": "Text-to-Speech (TTS) and Speech-to-Text (ASR) using coze-coding-dev-sdk. Returns results directly to stdout.",
+          "filePath": "/workspace/projects/workspace/skills/coze-voice-gen/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/coze-voice-gen",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coze-web-search",
+          "description": "Search the web using coze-coding-dev-sdk. Supports web search, image search, AI summaries, time filters, and site restrictions.",
+          "filePath": "/workspace/projects/workspace/skills/coze-web-search/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/coze-web-search",
+          "source": "openclaw-workspace",
           "disableModelInvocation": false
         }
       ],
       "version": 0
     },
-    "inputTokens": 12101,
-    "outputTokens": 107,
-    "totalTokens": 12101,
-    "modelProvider": "doubao",
-    "model": "deepseek-v3-2-251201",
-    "contextTokens": 128000,
+    "modelProvider": "coze",
+    "model": "kimi-k2-5-260127",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1770309402321,
-      "sessionId": "799e5a55-6fbe-4776-ae12-7b244e49c4ba",
+      "generatedAt": 1772128825767,
+      "sessionId": "6e0ea682-df1d-493c-aace-cae8ca8a5745",
       "sessionKey": "agent:main:main",
-      "provider": "doubao",
-      "model": "deepseek-v3-2-251201",
+      "provider": "coze",
+      "model": "kimi-k2-5-260127",
       "workspaceDir": "/workspace/projects/workspace",
       "bootstrapMaxChars": 20000,
+      "bootstrapTotalMaxChars": 150000,
       "sandbox": {
         "mode": "off",
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 22728,
-        "projectContextChars": 13368,
-        "nonProjectContextChars": 9360
+        "chars": 26228,
+        "projectContextChars": 14986,
+        "nonProjectContextChars": 11242
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "/workspace/projects/workspace/AGENTS.md",
           "missing": false,
-          "rawChars": 7804,
-          "injectedChars": 7804,
+          "rawChars": 8100,
+          "injectedChars": 8100,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "/workspace/projects/workspace/SOUL.md",
           "missing": false,
-          "rawChars": 1664,
-          "injectedChars": 1664,
+          "rawChars": 2776,
+          "injectedChars": 2776,
           "truncated": false
         },
         {
@@ -140,11 +174,11 @@
         }
       ],
       "skills": {
-        "promptChars": 1159,
+        "promptChars": 2411,
         "entries": [
           {
-            "name": "bluebubbles",
-            "blockChars": 286
+            "name": "healthcheck",
+            "blockChars": 482
           },
           {
             "name": "skill-creator",
@@ -152,24 +186,36 @@
           },
           {
             "name": "weather",
-            "blockChars": 211
+            "blockChars": 407
+          },
+          {
+            "name": "coze-image-gen",
+            "blockChars": 278
+          },
+          {
+            "name": "coze-voice-gen",
+            "blockChars": 276
+          },
+          {
+            "name": "coze-web-search",
+            "blockChars": 297
           }
         ]
       },
       "tools": {
-        "listChars": 1963,
-        "schemaChars": 13876,
+        "listChars": 1624,
+        "schemaChars": 13424,
         "entries": [
           {
             "name": "read",
             "summaryChars": 298,
-            "schemaChars": 398,
+            "schemaChars": 392,
             "propertiesCount": 4
           },
           {
             "name": "edit",
             "summaryChars": 129,
-            "schemaChars": 617,
+            "schemaChars": 591,
             "propertiesCount": 6
           },
           {
@@ -181,19 +227,19 @@
           {
             "name": "exec",
             "summaryChars": 181,
-            "schemaChars": 1037,
+            "schemaChars": 1086,
             "propertiesCount": 12
           },
           {
             "name": "process",
             "summaryChars": 85,
-            "schemaChars": 844,
-            "propertiesCount": 11
+            "schemaChars": 961,
+            "propertiesCount": 12
           },
           {
             "name": "browser",
             "summaryChars": 1251,
-            "schemaChars": 1869,
+            "schemaChars": 1897,
             "propertiesCount": 28
           },
           {
@@ -204,33 +250,21 @@
           },
           {
             "name": "nodes",
-            "summaryChars": 94,
-            "schemaChars": 1399,
-            "propertiesCount": 31
-          },
-          {
-            "name": "cron",
-            "summaryChars": 1959,
-            "schemaChars": 530,
-            "propertiesCount": 12
+            "summaryChars": 101,
+            "schemaChars": 1479,
+            "propertiesCount": 33
           },
           {
             "name": "message",
             "summaryChars": 89,
-            "schemaChars": 3198,
-            "propertiesCount": 79
+            "schemaChars": 4181,
+            "propertiesCount": 85
           },
           {
             "name": "tts",
-            "summaryChars": 129,
+            "summaryChars": 152,
             "schemaChars": 223,
             "propertiesCount": 2
-          },
-          {
-            "name": "gateway",
-            "summaryChars": 225,
-            "schemaChars": 465,
-            "propertiesCount": 11
           },
           {
             "name": "agents_list",
@@ -241,26 +275,32 @@
           {
             "name": "sessions_list",
             "summaryChars": 54,
-            "schemaChars": 176,
+            "schemaChars": 212,
             "propertiesCount": 4
           },
           {
             "name": "sessions_history",
             "summaryChars": 36,
-            "schemaChars": 149,
+            "schemaChars": 161,
             "propertiesCount": 3
           },
           {
             "name": "sessions_send",
             "summaryChars": 84,
-            "schemaChars": 203,
+            "schemaChars": 273,
             "propertiesCount": 5
           },
           {
             "name": "sessions_spawn",
-            "summaryChars": 107,
-            "schemaChars": 312,
-            "propertiesCount": 8
+            "summaryChars": 144,
+            "schemaChars": 414,
+            "propertiesCount": 10
+          },
+          {
+            "name": "subagents",
+            "summaryChars": 105,
+            "schemaChars": 191,
+            "propertiesCount": 4
           },
           {
             "name": "session_status",
@@ -269,31 +309,25 @@
             "propertiesCount": 2
           },
           {
-            "name": "web_search",
-            "summaryChars": 175,
-            "schemaChars": 733,
-            "propertiesCount": 6
-          },
-          {
-            "name": "web_fetch",
-            "summaryChars": 129,
-            "schemaChars": 360,
-            "propertiesCount": 3
-          },
-          {
             "name": "memory_search",
-            "summaryChars": 235,
+            "summaryChars": 334,
             "schemaChars": 139,
             "propertiesCount": 3
           },
           {
             "name": "memory_get",
-            "summaryChars": 188,
+            "summaryChars": 151,
             "schemaChars": 128,
             "propertiesCount": 3
           }
         ]
       }
-    }
+    },
+    "contextTokens": 256000,
+    "inputTokens": 22172,
+    "outputTokens": 13812,
+    "cacheRead": 194560,
+    "cacheWrite": 0,
+    "totalTokensFresh": false
   }
 }

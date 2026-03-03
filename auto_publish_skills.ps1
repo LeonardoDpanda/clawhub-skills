@@ -28,7 +28,7 @@ try {
 
     # 6. Publish to ClawHub
     Write-Host "`n6. Publishing to ClawHub..." -ForegroundColor Cyan
-    clawhub publish https://github.com/LeonardoDpanda/clawhub-skills.git
+    clawhub publish .
 
     Write-Host "`n=======================PUBLISH SUCCESSFUL!=======================" -ForegroundColor Green
 }

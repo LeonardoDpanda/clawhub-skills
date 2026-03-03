@@ -39,7 +39,7 @@ Universal configuration file format converter for JSON, YAML, and TOML.
    - [点击购买 ¥199/年（省17%）](https://your-store.com/buy?plan=pro-yearly)
 
 2. **国际支付（Stripe/PayPal）**
-   - [Gumroad 购买 $5/月](https://gumroad.com/l/YOUR_PRODUCT)
+   - [Gumroad 购买 $5/月](https://9708247063907.gumroad.com/l/qpaweb)
 
 ### 激活授权
 

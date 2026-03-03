@@ -1,9 +1,9 @@
 ---
-name: qr-code-generator
+name: qr-code-tool
 description: Generate QR codes for URLs, text, WiFi credentials, contact cards, and more. Use when creating scannable links for marketing materials, sharing WiFi passwords, generating business cards, or creating quick access to digital content. Supports custom styling, error correction levels, and multiple export formats.
 ---
 
-# QR Code Generator
+# QR Code Tool
 
 Create QR codes for URLs, WiFi, contacts, and more.
 
@@ -15,6 +15,36 @@ Create QR codes for URLs, WiFi, contacts, and more.
 - Creating quick app download links
 - Sharing locations or maps
 - Event check-in codes
+
+## ⚡ 版本对比
+
+| 功能 | 免费版 | 专业版 |
+|-----|--------|--------|
+| 基础URL二维码 | ✅ | ✅ |
+| 黑白样式 | ✅ | ✅ |
+| 自定义颜色 | ❌ | ✅ |
+| 添加Logo | ❌ | ✅ |
+| WiFi自动连接码 | ❌ | ✅ |
+| 名片(vCard) | ❌ | ✅ |
+| 批量生成 | ❌ | ✅ |
+| 高清PNG导出 | ❌ | ✅ |
+| **价格** | **免费** | **$4 一次性** |
+
+## 🚀 升级到专业版
+
+### 购买授权码
+
+- [Gumroad 购买 $4](https://9708247063907.gumroad.com/l/lompxr)
+
+### 激活授权
+
+```bash
+# 激活专业版
+clawhub config set qr-code-tool.license "YOUR_LICENSE_KEY"
+
+# 验证激活状态
+clawhub config get qr-code-tool.license
+```
 
 ## Quick Start
 
@@ -42,7 +72,7 @@ def generate_qr(data, output_path='qr_code.png'):
 generate_qr('https://example.com', 'website_qr.png')
 ```
 
-### WiFi QR Code
+### WiFi QR Code (专业版)
 
 ```python
 def generate_wifi_qr(ssid, password, security='WPA', output='wifi_qr.png'):
@@ -58,7 +88,7 @@ generate_wifi_qr('MyHomeNetwork', 'secret123', 'WPA')
 # Scan to auto-connect to WiFi
 ```
 
-### Contact Card (vCard)
+### Contact Card vCard (专业版)
 
 ```python
 def generate_vcard_qr(name, phone, email, output='contact_qr.png'):
@@ -75,7 +105,7 @@ END:VCARD"""
 generate_vcard_qr('John Doe', '+1234567890', 'john@example.com')
 ```
 
-### Styled QR Code
+### Styled QR Code (专业版)
 
 ```python
 def generate_styled_qr(data, output='styled_qr.png', **kwargs):
@@ -113,56 +143,6 @@ generate_styled_qr('https://mysite.com', 'blue_qr.png',
 | M | ~15% | Default, good balance |
 | Q | ~25% | Dirty/damaged possible |
 | H | ~30% | Logos/overlays on QR |
-
-## Advanced Features
-
-### Batch Generate
-
-```python
-def batch_generate(urls, output_dir='./qr_codes'):
-    """Generate QR codes for multiple URLs"""
-    import os
-    os.makedirs(output_dir, exist_ok=True)
-    
-    generated = []
-    for i, url in enumerate(urls, 1):
-        output = f"{output_dir}/qr_{i:03d}.png"
-        generate_qr(url, output)
-        generated.append(output)
-    
-    return generated
-
-# Usage
-urls = [
-    'https://product1.com',
-    'https://product2.com',
-    'https://product3.com'
-]
-batch_generate(urls)
-```
-
-### Add Logo to Center
-
-```python
-from PIL import Image
-
-def add_logo_to_qr(qr_path, logo_path, output_path):
-    """Add logo to center of QR code"""
-    qr_img = Image.open(qr_path)
-    logo_img = Image.open(logo_path)
-    
-    # Resize logo to fit in center
-    box_size = min(qr_img.size) // 5
-    logo_img = logo_img.resize((box_size, box_size))
-    
-    # Calculate position
-    pos = ((qr_img.size[0] - box_size) // 2,
-           (qr_img.size[1] - box_size) // 2)
-    
-    # Paste logo
-    qr_img.paste(logo_img, pos, logo_img if logo_img.mode == 'RGBA' else None)
-    qr_img.save(output_path)
-```
 
 ## Dependencies
 

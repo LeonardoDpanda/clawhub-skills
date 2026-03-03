@@ -1,9 +1,9 @@
 ---
-name: api-tester
+name: rest-api-tester
 description: Test REST APIs with customizable headers, authentication, and request bodies. Use when debugging API endpoints, testing authentication flows, validating responses, or automating API checks. Supports GET, POST, PUT, DELETE, PATCH methods with JSON, form-data, and raw body formats. Ideal for developers testing webhooks, microservices, and third-party integrations.
 ---
 
-# API Tester
+# REST API Tester
 
 Test REST APIs with custom headers, auth, and request bodies.
 
@@ -15,6 +15,36 @@ Test REST APIs with custom headers, auth, and request bodies.
 - Checking API response times
 - Automating health checks
 - Testing third-party integrations
+
+## ⚡ 版本对比
+
+| 功能 | 免费版 | 专业版 |
+|-----|--------|--------|
+| GET/POST请求 | ✅ | ✅ |
+| 基础Headers | ✅ | ✅ |
+| 保存请求集合 | ❌ | ✅ |
+| 自动化测试套件 | ❌ | ✅ |
+| 性能基准测试 | ❌ | ✅ |
+| 响应验证 | ❌ | ✅ |
+| Webhook测试服务器 | ❌ | ✅ |
+| 环境变量 | ❌ | ✅ |
+| **价格** | **免费** | **$5 一次性** |
+
+## 🚀 升级到专业版
+
+### 购买授权码
+
+- [Gumroad 购买 $5](https://9708247063907.gumroad.com/l/pzksc)
+
+### 激活授权
+
+```bash
+# 激活专业版
+clawhub config set rest-api-tester.license "YOUR_LICENSE_KEY"
+
+# 验证激活状态
+clawhub config get rest-api-tester.license
+```
 
 ## Quick Start
 
@@ -90,7 +120,7 @@ test_with_auth('https://api.example.com/data', token='your_token_here')
 test_with_auth('https://api.example.com/data', username='admin', password='secret')
 ```
 
-### Full API Test Suite
+### Full API Test Suite (专业版)
 
 ```python
 def comprehensive_api_test(base_url, endpoints):
@@ -133,81 +163,8 @@ endpoints = {
 comprehensive_api_test('https://api.example.com', endpoints)
 ```
 
-## Common Testing Scenarios
-
-### Webhook Testing
-
-```python
-from flask import Flask, request
-
-def create_webhook_listener(port=5000):
-    """Create local webhook receiver for testing"""
-    app = Flask(__name__)
-    received_data = []
-    
-    @app.route('/webhook', methods=['POST'])
-    def webhook():
-        data = request.json
-        received_data.append(data)
-        print(f"Received webhook: {data}")
-        return {'status': 'ok'}
-    
-    @app.route('/received', methods=['GET'])
-    def get_received():
-        return {'data': received_data}
-    
-    return app
-
-# Run: app.run(port=5000)
-# Use ngrok to expose: ngrok http 5000
-```
-
-### Performance Testing
-
-```python
-import time
-
-def test_api_performance(url, iterations=10):
-    """Test API response times"""
-    times = []
-    
-    for _ in range(iterations):
-        start = time.time()
-        requests.get(url, timeout=30)
-        times.append(time.time() - start)
-    
-    return {
-        'min': min(times),
-        'max': max(times),
-        'avg': sum(times) / len(times),
-        'times': times
-    }
-```
-
-## Response Validation
-
-```python
-def validate_response(response, expected_status=200, required_fields=None):
-    """Validate API response structure"""
-    errors = []
-    
-    if response.get('status') != expected_status:
-        errors.append(f"Expected status {expected_status}, got {response.get('status')}")
-    
-    body = response.get('body', {})
-    if required_fields:
-        for field in required_fields:
-            if field not in body:
-                errors.append(f"Missing required field: {field}")
-    
-    return {
-        'valid': len(errors) == 0,
-        'errors': errors
-    }
-```
-
 ## Dependencies
 
 ```bash
-pip install requests flask
+pip install requests
 ```

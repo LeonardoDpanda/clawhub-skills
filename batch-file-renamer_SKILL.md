@@ -16,6 +16,36 @@ Powerful batch file renaming with patterns, regex, and preview.
 - Sequential numbering for ordered content
 - Removing special characters from filenames
 
+## ⚡ 版本对比
+
+| 功能 | 免费版 | 专业版 |
+|-----|--------|--------|
+| 单文件重命名 | ✅ | ✅ |
+| 基础替换 | ✅ | ✅ |
+| 批量重命名(≤50文件) | ✅ | ✅ |
+| 批量重命名(无限) | ❌ | ✅ |
+| 正则表达式匹配 | ❌ | ✅ |
+| 序号批量生成 | ❌ | ✅ |
+| 自动时间戳 | ❌ | ✅ |
+| 预览模式 | ❌ | ✅ |
+| **价格** | **免费** | **$3 一次性** |
+
+## 🚀 升级到专业版
+
+### 购买授权码
+
+- [Gumroad 购买 $3](https://9708247063907.gumroad.com/l/arybl)
+
+### 激活授权
+
+```bash
+# 激活专业版
+clawhub config set batch-file-renamer.license "YOUR_LICENSE_KEY"
+
+# 验证激活状态
+clawhub config get batch-file-renamer.license
+```
+
 ## Quick Start
 
 ### Basic Rename
@@ -48,7 +78,7 @@ def batch_rename(directory, pattern, replacement):
 batch_rename('./photos', r'^(.*)$', r'Vacation_2025_\1')
 ```
 
-### Sequential Numbering
+### Sequential Numbering (专业版)
 
 ```python
 def number_files(directory, prefix='', digits=3, extension=None):
@@ -72,26 +102,7 @@ number_files('./downloads', prefix='Project_', digits=3)
 # Result: Project_001.pdf, Project_002.jpg, ...
 ```
 
-### Add Timestamps
-
-```python
-def add_timestamp(directory, date_format='%Y%m%d'):
-    """Add date prefix to files"""
-    timestamp = datetime.now().strftime(date_format)
-    
-    for filename in os.listdir(directory):
-        old_path = os.path.join(directory, filename)
-        name, ext = os.path.splitext(filename)
-        new_name = f"{timestamp}_{name}{ext}"
-        new_path = os.path.join(directory, new_name)
-        os.rename(old_path, new_path)
-
-# Usage
-add_timestamp('./logs')
-# Result: 20250303_error.log, 20250303_debug.log
-```
-
-### Preview Mode (Safe)
+### Preview Mode (专业版安全功能)
 
 ```python
 def preview_rename(directory, pattern, replacement):
@@ -125,28 +136,8 @@ for change in preview:
 3. **Test on single file** - Verify pattern works as expected
 4. **Use regex groups** - Capture parts of filename with `(\d+)` etc.
 
-## Safety Features
+## Dependencies
 
-```python
-def safe_rename(directory, pattern, replacement, dry_run=True):
-    """Safe rename with dry-run option"""
-    changes = []
-    
-    for filename in os.listdir(directory):
-        new_name = re.sub(pattern, replacement, filename)
-        if new_name != filename:
-            changes.append((filename, new_name))
-    
-    if dry_run:
-        print("DRY RUN - Changes that would be made:")
-        for old, new in changes:
-            print(f"  {old} -> {new}")
-        return changes
-    else:
-        for old, new in changes:
-            os.rename(
-                os.path.join(directory, old),
-                os.path.join(directory, new)
-            )
-        return changes
+```bash
+pip install re
 ```

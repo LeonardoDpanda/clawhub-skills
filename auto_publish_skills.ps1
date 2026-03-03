@@ -1,3 +1,4 @@
+$env:CLAWHUB_TOKEN = "clh_99Jjx47XZT3QFcvMj7rMETDytf-g9F8cQ9Jv4z84FjM"
 # Fix encoding issues
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8

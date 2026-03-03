@@ -39,7 +39,7 @@ try {
 }
 catch {
     # Error capture and prompt
-    Write-Host "`n? ERROR DETAIL: $_" -ForegroundColor Red
+    Write-Host "`n❌ ERROR DETAIL: $_" -ForegroundColor Red
     Write-Host "`n=======================PUBLISH FAILED!=======================" -ForegroundColor Red
 }
 

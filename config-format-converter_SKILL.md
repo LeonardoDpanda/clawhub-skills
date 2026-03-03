@@ -15,13 +15,41 @@ Universal configuration file format converter for JSON, YAML, and TOML.
 - Validating syntax before committing config changes
 - Pretty-printing minified config files
 
-## Supported Formats
+## ⚡ 版本对比
 
-| Format | Extensions | Use Cases |
-|--------|-----------|-----------|
-| JSON | `.json` | npm, Node.js, VS Code settings |
-| YAML | `.yaml`, `.yml` | Docker Compose, GitHub Actions, Kubernetes |
-| TOML | `.toml` | Python Poetry, Rust Cargo, Go modules |
+| 功能 | 免费版 | 专业版 | 企业版 |
+|-----|--------|--------|--------|
+| 单文件转换 | ✅ | ✅ | ✅ |
+| 基础格式(JSON/YAML/TOML) | ✅ | ✅ | ✅ |
+| 批量文件转换 | ❌ | ✅ | ✅ |
+| 高级格式(XML/INI/Properties) | ❌ | ✅ | ✅ |
+| API 接口调用 | ❌ | ✅ | ✅ |
+| 自定义转换模板 | ❌ | ✅ | ✅ |
+| 私有化部署 | ❌ | ❌ | ✅ |
+| SLA 技术支持 | ❌ | ❌ | ✅ |
+| **价格** | **免费** | **¥29/月** | **联系销售** |
+
+## 🚀 升级到专业版
+
+### 购买授权码
+
+1. **微信/支付宝支付**
+   - 扫码支付 → 自动发送授权码到邮箱
+   - [点击购买 ¥29/月](https://your-store.com/buy?plan=pro)
+   - [点击购买 ¥199/年（省17%）](https://your-store.com/buy?plan=pro-yearly)
+
+2. **国际支付（Stripe/PayPal）**
+   - [Gumroad 购买 $5/月](https://gumroad.com/l/YOUR_PRODUCT)
+
+### 激活授权
+
+```bash
+# 激活专业版
+clawhub config set config-format-converter.license "YOUR_LICENSE_KEY"
+
+# 验证激活状态
+clawhub config get config-format-converter.license
+```
 
 ## Quick Start
 
@@ -51,6 +79,24 @@ with open('pyproject.json', 'w') as f:
     json.dump(data, f, indent=2)
 ```
 
+### Batch Convert (专业版功能)
+
+```python
+import os
+import json
+import yaml
+
+# 批量转换目录下所有 JSON 为 YAML
+for filename in os.listdir('configs/'):
+    if filename.endswith('.json'):
+        with open(f'configs/{filename}') as f:
+            data = json.load(f)
+        output = filename.replace('.json', '.yaml')
+        with open(f'configs/{output}', 'w') as f:
+            yaml.dump(data, f, default_flow_style=False)
+        print(f"Converted: {filename} -> {output}")
+```
+
 ### Validate Config Syntax
 
 ```python
@@ -72,18 +118,6 @@ def validate_yaml(filepath):
         return True, "Valid YAML"
     except yaml.YAMLError as e:
         return False, str(e)
-```
-
-### Pretty-Print Configs
-
-```python
-import json
-
-# Compact to pretty JSON
-with open('config.min.json') as f:
-    data = json.load(f)
-with open('config.json', 'w') as f:
-    json.dump(data, f, indent=2, ensure_ascii=False)
 ```
 
 ## Common Workflows
@@ -116,40 +150,14 @@ with open('pyproject.toml', 'w') as f:
     toml.dump(pyproject, f)
 ```
 
-### Convert Docker Compose YAML to JSON for CI
-
-```python
-import yaml
-import json
-
-with open('docker-compose.yaml') as f:
-    compose = yaml.safe_load(f)
-
-with open('docker-compose.json', 'w') as f:
-    json.dump(compose, f, indent=2)
-```
-
-## Best Practices
-
-- **Preserve comments**: YAML/TOML comments are lost in conversion; document important notes separately
-- **Key ordering**: Use `sort_keys=False` to preserve original key order
-- **Unicode**: Always use `ensure_ascii=False` for international configs
-- **Validation**: Always validate output after conversion
-- **Backup**: Keep original files before bulk conversion
-
-## Error Handling
-
-Common issues and solutions:
-
-| Issue | Cause | Fix |
-|-------|-------|-----|
-| `ScannerError` | Invalid YAML syntax | Check indentation (spaces, not tabs) |
-| `TomlDecodeError` | Invalid TOML syntax | Verify section headers `[section]` |
-| `JSONDecodeError` | Trailing commas in JSON | Remove commas before `}` or `]` |
-| Unicode errors | Encoding mismatch | Open files with `encoding='utf-8'` |
-
 ## Dependencies
 
 ```bash
 pip install pyyaml toml
 ```
+
+## Support
+
+- 📧 邮箱: support@your-domain.com
+- 💬 微信: YourWeChatID
+- 📖 文档: https://docs.your-domain.com

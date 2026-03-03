@@ -32,7 +32,7 @@ try {
 
     # 6. Publish to ClawHub platform (with forced Registry parameter)
     Write-Host "`n6. Publishing to ClawHub..." -ForegroundColor Cyan
-    clawhub publish . --registry "https://www.clawhub.ai"
+    clawhub publish . --token "clh_bvEZkqyJ9vQdxccv_U3GTcwjGBmLypGofQJA88hlsSQ" --registry "https://www.clawhub.ai"
 
     # Publish success prompt
     Write-Host "`n=======================PUBLISH SUCCESSFUL!=======================" -ForegroundColor Green

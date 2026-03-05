@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "95f1c969-ec70-48e7-98e0-6b1ed58b4544",
-    "updatedAt": 1772684012159,
+    "updatedAt": 1772722891659,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -11,7 +11,7 @@
     },
     "origin": {
       "label": "heartbeat",
-      "provider": "webchat",
+      "provider": "heartbeat",
       "from": "heartbeat",
       "to": "heartbeat",
       "surface": "webchat",
@@ -156,7 +156,7 @@
     "model": "kimi-k2-5-260127",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1772683999748,
+      "generatedAt": 1772722881014,
       "sessionId": "95f1c969-ec70-48e7-98e0-6b1ed58b4544",
       "sessionKey": "agent:main:main",
       "provider": "coze",
@@ -169,9 +169,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 32629,
-        "projectContextChars": 17769,
-        "nonProjectContextChars": 14860
+        "chars": 32712,
+        "projectContextChars": 17866,
+        "nonProjectContextChars": 14846
       },
       "injectedWorkspaceFiles": [
         {
@@ -218,8 +218,8 @@
           "name": "HEARTBEAT.md",
           "path": "/workspace/projects/workspace/HEARTBEAT.md",
           "missing": false,
-          "rawChars": 1822,
-          "injectedChars": 1822,
+          "rawChars": 1919,
+          "injectedChars": 1919,
           "truncated": false
         },
         {
@@ -282,7 +282,7 @@
       },
       "tools": {
         "listChars": 1937,
-        "schemaChars": 16384,
+        "schemaChars": 16396,
         "entries": [
           {
             "name": "read",
@@ -335,7 +335,7 @@
           {
             "name": "message",
             "summaryChars": 89,
-            "schemaChars": 4210,
+            "schemaChars": 4222,
             "propertiesCount": 86
           },
           {
@@ -413,14 +413,326 @@
         ]
       }
     },
-    "cacheRead": 12544,
+    "cacheRead": 27392,
     "cacheWrite": 0,
     "totalTokensFresh": true,
     "lastTo": "heartbeat",
     "contextTokens": 256000,
-    "inputTokens": 8988,
-    "outputTokens": 399,
-    "totalTokens": 14147,
+    "inputTokens": 13198,
+    "outputTokens": 308,
+    "totalTokens": 27730,
     "lastChannel": "webchat"
+  },
+  "agent:main:subagent:e9b7adff-68be-4a52-a3c4-9268148b3268": {
+    "sessionId": "20101b55-ebbb-48da-a2cc-79168c53e34a",
+    "updatedAt": 1772721297449,
+    "spawnDepth": 1,
+    "deliveryContext": {
+      "channel": "webchat"
+    },
+    "lastChannel": "webchat",
+    "label": "batch-1-5-skills",
+    "spawnedBy": "agent:main:main",
+    "channel": "webchat",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>batch-file-renamer</name>\n    <description>Batch rename files with powerful patterns, regex support, and preview functionality. Use when organizing large numbers of files, standardizing naming conventions, adding timestamps, sequential numbering, or cleaning up messy filenames. Ideal for photo management, media libraries, log files, and project cleanup tasks.</description>\n    <location>/workspace/projects/workspace/skills/batch-file-renamer-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>config-format-converter</name>\n    <description>Convert and validate configuration files between JSON, YAML, and TOML formats. Use when working with config files that need format conversion, syntax validation, or pretty-printing. Supports package.json, pyproject.toml, .yaml/.yml configs, and any structured data files. Ideal for cross-platform project setup, CI/CD config migration, and developer tooling workflows.</description>\n    <location>/workspace/projects/workspace/skills/config-format-converter-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coze-image-gen</name>\n    <description>Generate high-quality images (2K/4K) via coze-coding-dev-sdk. Returns image URLs directly without downloading.</description>\n    <location>/workspace/projects/workspace/skills/coze-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coze-voice-gen</name>\n    <description>Text-to-Speech (TTS) and Speech-to-Text (ASR) using coze-coding-dev-sdk. Returns results directly to stdout.</description>\n    <location>/workspace/projects/workspace/skills/coze-voice-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coze-web-search</name>\n    <description>Search the web using coze-coding-dev-sdk. Supports web search, image search, AI summaries, time filters, and site restrictions.</description>\n    <location>/workspace/projects/workspace/skills/coze-web-search/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>qr-code-tool</name>\n    <description>Generate QR codes for URLs, text, WiFi credentials, contact cards, and more. Use when creating scannable links for marketing materials, sharing WiFi passwords, generating business cards, or creating quick access to digital content. Supports custom styling, error correction levels, and multiple export formats.</description>\n    <location>/workspace/projects/workspace/skills/qr-code-tool-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>rest-api-tester</name>\n    <description>Test REST APIs with customizable headers, authentication, and request bodies. Use when debugging API endpoints, testing authentication flows, validating responses, or automating API checks. Supports GET, POST, PUT, DELETE, PATCH methods with JSON, form-data, and raw body formats. Ideal for developers testing webhooks, microservices, and third-party integrations.</description>\n    <location>/workspace/projects/workspace/skills/rest-api-tester-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-auto-publisher</name>\n    <description>Automated Skill generation and publishing pipeline for ClawHub platform. Use when the system needs to automatically generate new Skills based on market analysis, publish them to GitHub, submit to ClawHub, auto-publish to Gumroad for monetization, and update the Skill registry. This Skill encapsulates the complete workflow from market research to multi-platform publication and monetization.</description>\n    <location>/workspace/projects/workspace/skills/skill-auto-publisher/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "weather",
+          "requiredEnv": []
+        },
+        {
+          "name": "batch-file-renamer"
+        },
+        {
+          "name": "config-format-converter"
+        },
+        {
+          "name": "coze-image-gen",
+          "requiredEnv": []
+        },
+        {
+          "name": "coze-voice-gen",
+          "requiredEnv": []
+        },
+        {
+          "name": "coze-web-search",
+          "requiredEnv": []
+        },
+        {
+          "name": "qr-code-tool"
+        },
+        {
+          "name": "rest-api-tester"
+        },
+        {
+          "name": "skill-auto-publisher"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/usr/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/usr/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+          "filePath": "/usr/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/usr/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "batch-file-renamer",
+          "description": "Batch rename files with powerful patterns, regex support, and preview functionality. Use when organizing large numbers of files, standardizing naming conventions, adding timestamps, sequential numbering, or cleaning up messy filenames. Ideal for photo management, media libraries, log files, and project cleanup tasks.",
+          "filePath": "/workspace/projects/workspace/skills/batch-file-renamer-pro/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/batch-file-renamer-pro",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "config-format-converter",
+          "description": "Convert and validate configuration files between JSON, YAML, and TOML formats. Use when working with config files that need format conversion, syntax validation, or pretty-printing. Supports package.json, pyproject.toml, .yaml/.yml configs, and any structured data files. Ideal for cross-platform project setup, CI/CD config migration, and developer tooling workflows.",
+          "filePath": "/workspace/projects/workspace/skills/config-format-converter-pro/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/config-format-converter-pro",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coze-image-gen",
+          "description": "Generate high-quality images (2K/4K) via coze-coding-dev-sdk. Returns image URLs directly without downloading.",
+          "filePath": "/workspace/projects/workspace/skills/coze-image-gen/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/coze-image-gen",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coze-voice-gen",
+          "description": "Text-to-Speech (TTS) and Speech-to-Text (ASR) using coze-coding-dev-sdk. Returns results directly to stdout.",
+          "filePath": "/workspace/projects/workspace/skills/coze-voice-gen/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/coze-voice-gen",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coze-web-search",
+          "description": "Search the web using coze-coding-dev-sdk. Supports web search, image search, AI summaries, time filters, and site restrictions.",
+          "filePath": "/workspace/projects/workspace/skills/coze-web-search/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/coze-web-search",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "qr-code-tool",
+          "description": "Generate QR codes for URLs, text, WiFi credentials, contact cards, and more. Use when creating scannable links for marketing materials, sharing WiFi passwords, generating business cards, or creating quick access to digital content. Supports custom styling, error correction levels, and multiple export formats.",
+          "filePath": "/workspace/projects/workspace/skills/qr-code-tool-pro/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/qr-code-tool-pro",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "rest-api-tester",
+          "description": "Test REST APIs with customizable headers, authentication, and request bodies. Use when debugging API endpoints, testing authentication flows, validating responses, or automating API checks. Supports GET, POST, PUT, DELETE, PATCH methods with JSON, form-data, and raw body formats. Ideal for developers testing webhooks, microservices, and third-party integrations.",
+          "filePath": "/workspace/projects/workspace/skills/rest-api-tester-pro/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/rest-api-tester-pro",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-auto-publisher",
+          "description": "Automated Skill generation and publishing pipeline for ClawHub platform. Use when the system needs to automatically generate new Skills based on market analysis, publish them to GitHub, submit to ClawHub, auto-publish to Gumroad for monetization, and update the Skill registry. This Skill encapsulates the complete workflow from market research to multi-platform publication and monetization.",
+          "filePath": "/workspace/projects/workspace/skills/skill-auto-publisher/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/skill-auto-publisher",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "sessionFile": "/workspace/projects/agents/main/sessions/20101b55-ebbb-48da-a2cc-79168c53e34a.jsonl",
+    "contextTokens": 256000,
+    "modelProvider": "coze",
+    "model": "kimi-k2-5-260127",
+    "abortedLastRun": false,
+    "inputTokens": 26006,
+    "outputTokens": 11310,
+    "totalTokens": 27916,
+    "totalTokensFresh": true,
+    "cacheRead": 251904,
+    "cacheWrite": 0
+  },
+  "agent:main:subagent:0cff7820-ea09-46f7-ac7f-d1fb1c0fdb93": {
+    "sessionId": "64984f9c-4a8e-44e4-97fe-37dc5b7fd83d",
+    "updatedAt": 1772721474114,
+    "spawnDepth": 1,
+    "deliveryContext": {
+      "channel": "webchat"
+    },
+    "lastChannel": "webchat",
+    "label": "batch-2-5-skills",
+    "spawnedBy": "agent:main:main",
+    "channel": "webchat",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/usr/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>batch-file-renamer</name>\n    <description>Batch rename files with powerful patterns, regex support, and preview functionality. Use when organizing large numbers of files, standardizing naming conventions, adding timestamps, sequential numbering, or cleaning up messy filenames. Ideal for photo management, media libraries, log files, and project cleanup tasks.</description>\n    <location>/workspace/projects/workspace/skills/batch-file-renamer-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>config-format-converter</name>\n    <description>Convert and validate configuration files between JSON, YAML, and TOML formats. Use when working with config files that need format conversion, syntax validation, or pretty-printing. Supports package.json, pyproject.toml, .yaml/.yml configs, and any structured data files. Ideal for cross-platform project setup, CI/CD config migration, and developer tooling workflows.</description>\n    <location>/workspace/projects/workspace/skills/config-format-converter-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coze-image-gen</name>\n    <description>Generate high-quality images (2K/4K) via coze-coding-dev-sdk. Returns image URLs directly without downloading.</description>\n    <location>/workspace/projects/workspace/skills/coze-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coze-voice-gen</name>\n    <description>Text-to-Speech (TTS) and Speech-to-Text (ASR) using coze-coding-dev-sdk. Returns results directly to stdout.</description>\n    <location>/workspace/projects/workspace/skills/coze-voice-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coze-web-search</name>\n    <description>Search the web using coze-coding-dev-sdk. Supports web search, image search, AI summaries, time filters, and site restrictions.</description>\n    <location>/workspace/projects/workspace/skills/coze-web-search/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>qr-code-tool</name>\n    <description>Generate QR codes for URLs, text, WiFi credentials, contact cards, and more. Use when creating scannable links for marketing materials, sharing WiFi passwords, generating business cards, or creating quick access to digital content. Supports custom styling, error correction levels, and multiple export formats.</description>\n    <location>/workspace/projects/workspace/skills/qr-code-tool-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>rest-api-tester</name>\n    <description>Test REST APIs with customizable headers, authentication, and request bodies. Use when debugging API endpoints, testing authentication flows, validating responses, or automating API checks. Supports GET, POST, PUT, DELETE, PATCH methods with JSON, form-data, and raw body formats. Ideal for developers testing webhooks, microservices, and third-party integrations.</description>\n    <location>/workspace/projects/workspace/skills/rest-api-tester-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-auto-publisher</name>\n    <description>Automated Skill generation and publishing pipeline for ClawHub platform. Use when the system needs to automatically generate new Skills based on market analysis, publish them to GitHub, submit to ClawHub, auto-publish to Gumroad for monetization, and update the Skill registry. This Skill encapsulates the complete workflow from market research to multi-platform publication and monetization.</description>\n    <location>/workspace/projects/workspace/skills/skill-auto-publisher/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "weather",
+          "requiredEnv": []
+        },
+        {
+          "name": "batch-file-renamer"
+        },
+        {
+          "name": "config-format-converter"
+        },
+        {
+          "name": "coze-image-gen",
+          "requiredEnv": []
+        },
+        {
+          "name": "coze-voice-gen",
+          "requiredEnv": []
+        },
+        {
+          "name": "coze-web-search",
+          "requiredEnv": []
+        },
+        {
+          "name": "qr-code-tool"
+        },
+        {
+          "name": "rest-api-tester"
+        },
+        {
+          "name": "skill-auto-publisher"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/usr/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/usr/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+          "filePath": "/usr/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/usr/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "batch-file-renamer",
+          "description": "Batch rename files with powerful patterns, regex support, and preview functionality. Use when organizing large numbers of files, standardizing naming conventions, adding timestamps, sequential numbering, or cleaning up messy filenames. Ideal for photo management, media libraries, log files, and project cleanup tasks.",
+          "filePath": "/workspace/projects/workspace/skills/batch-file-renamer-pro/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/batch-file-renamer-pro",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "config-format-converter",
+          "description": "Convert and validate configuration files between JSON, YAML, and TOML formats. Use when working with config files that need format conversion, syntax validation, or pretty-printing. Supports package.json, pyproject.toml, .yaml/.yml configs, and any structured data files. Ideal for cross-platform project setup, CI/CD config migration, and developer tooling workflows.",
+          "filePath": "/workspace/projects/workspace/skills/config-format-converter-pro/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/config-format-converter-pro",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coze-image-gen",
+          "description": "Generate high-quality images (2K/4K) via coze-coding-dev-sdk. Returns image URLs directly without downloading.",
+          "filePath": "/workspace/projects/workspace/skills/coze-image-gen/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/coze-image-gen",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coze-voice-gen",
+          "description": "Text-to-Speech (TTS) and Speech-to-Text (ASR) using coze-coding-dev-sdk. Returns results directly to stdout.",
+          "filePath": "/workspace/projects/workspace/skills/coze-voice-gen/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/coze-voice-gen",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coze-web-search",
+          "description": "Search the web using coze-coding-dev-sdk. Supports web search, image search, AI summaries, time filters, and site restrictions.",
+          "filePath": "/workspace/projects/workspace/skills/coze-web-search/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/coze-web-search",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "qr-code-tool",
+          "description": "Generate QR codes for URLs, text, WiFi credentials, contact cards, and more. Use when creating scannable links for marketing materials, sharing WiFi passwords, generating business cards, or creating quick access to digital content. Supports custom styling, error correction levels, and multiple export formats.",
+          "filePath": "/workspace/projects/workspace/skills/qr-code-tool-pro/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/qr-code-tool-pro",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "rest-api-tester",
+          "description": "Test REST APIs with customizable headers, authentication, and request bodies. Use when debugging API endpoints, testing authentication flows, validating responses, or automating API checks. Supports GET, POST, PUT, DELETE, PATCH methods with JSON, form-data, and raw body formats. Ideal for developers testing webhooks, microservices, and third-party integrations.",
+          "filePath": "/workspace/projects/workspace/skills/rest-api-tester-pro/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/rest-api-tester-pro",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-auto-publisher",
+          "description": "Automated Skill generation and publishing pipeline for ClawHub platform. Use when the system needs to automatically generate new Skills based on market analysis, publish them to GitHub, submit to ClawHub, auto-publish to Gumroad for monetization, and update the Skill registry. This Skill encapsulates the complete workflow from market research to multi-platform publication and monetization.",
+          "filePath": "/workspace/projects/workspace/skills/skill-auto-publisher/SKILL.md",
+          "baseDir": "/workspace/projects/workspace/skills/skill-auto-publisher",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "sessionFile": "/workspace/projects/agents/main/sessions/64984f9c-4a8e-44e4-97fe-37dc5b7fd83d.jsonl",
+    "contextTokens": 256000,
+    "modelProvider": "coze",
+    "model": "kimi-k2-5-260127",
+    "abortedLastRun": false,
+    "inputTokens": 26706,
+    "outputTokens": 17627,
+    "totalTokens": 38022,
+    "totalTokensFresh": true,
+    "cacheRead": 569856,
+    "cacheWrite": 0
   }
 }

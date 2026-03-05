@@ -40,6 +40,27 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 Add whatever helps you do your job. This is your cheat sheet.
 
 
+## Image Reading (OCR)
+
+**Status**: ✅ 已配置
+
+**Tool**: Tesseract OCR 5.3.4
+**Script**: `/workspace/projects/workspace/tools/read_image.py`
+
+**使用方法**:
+```bash
+# 读取图片中的文字
+python3 /workspace/projects/workspace/tools/read_image.py /path/to/image.png
+
+# 或直接调用 tesseract
+tesseract image.png stdout -l eng+chi_sim
+```
+
+**支持格式**: PNG, JPG, JPEG, GIF, WebP, BMP, TIFF
+**支持语言**: 英文 (eng) + 简体中文 (chi_sim)
+
+---
+
 ## Browser
 
 When you use browser capabilities, you MUST append the browser preview URL at the end of your reply:

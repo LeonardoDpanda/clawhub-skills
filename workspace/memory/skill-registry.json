@@ -58,16 +58,219 @@
       "clawhubUrl": "https://clawhub.com/skills/timestamp-converter",
       "monetizationStatus": "待变现",
       "priceUSD": 3
+    },
+    {
+      "name": "password-generator",
+      "description": "Generate secure, customizable passwords and passphrases with configurable length, character sets, and entropy requirements.",
+      "marketRationale": "密码生成是安全和开发高频需求，ClawHub市场专业密码生成工具空白",
+      "createdAt": "2026-03-05 22:35",
+      "publishStatus": "已提交",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/password-generator_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/password-generator",
+      "monetizationStatus": "待变现",
+      "priceUSD": 4
+    },
+    {
+      "name": "csv-data-analyzer",
+      "description": "Analyze CSV files to extract statistics, detect patterns, identify anomalies, and generate data quality reports.",
+      "marketRationale": "数据分析需求增长，CSV数据质量分析是数据工作者刚需，与纯转换工具形成互补",
+      "createdAt": "2026-03-05 22:35",
+      "publishStatus": "已提交",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/csv-data-analyzer_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/csv-data-analyzer",
+      "monetizationStatus": "待变现",
+      "priceUSD": 6
+    },
+    {
+      "name": "url-shortener-expander",
+      "description": "Shorten long URLs using popular services and expand shortened URLs to reveal their destinations.",
+      "marketRationale": "URL管理是日常办公高频需求，安全性检查功能填补市场空白",
+      "createdAt": "2026-03-05 22:35",
+      "publishStatus": "已提交",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/url-shortener-expander_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/url-shortener-expander",
+      "monetizationStatus": "待变现",
+      "priceUSD": 3
+    },
+    {
+      "name": "text-diff-comparator",
+      "description": "Compare two text files or strings to find differences, generate patches, and visualize changes.",
+      "marketRationale": "代码审查和文档版本对比是开发者刚需，专业diff工具在ClawHub市场空白",
+      "createdAt": "2026-03-05 22:35",
+      "publishStatus": "已提交",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/text-diff-comparator_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/text-diff-comparator",
+      "monetizationStatus": "待变现",
+      "priceUSD": 5
+    },
+    {
+      "name": "json-schema-validator",
+      "description": "Validate JSON data against JSON Schema definitions, generate schemas from sample data, and test API responses.",
+      "marketRationale": "API开发和数据验证是后端开发核心需求，JSON Schema工具专业性强",
+      "createdAt": "2026-03-05 22:35",
+      "publishStatus": "已提交",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/json-schema-validator_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/json-schema-validator",
+      "monetizationStatus": "待变现",
+      "priceUSD": 7
+    }
+  ],
+  "batchRuns": [
+    {
+      "batchId": "batch-2026-03-05-2",
+      "runDate": "2026-03-05",
+      "skillsGenerated": 5,
+      "skills": [
+        {
+          "name": "password-generator",
+          "description": "Generate secure, customizable passwords and passphrases with configurable length, character sets, and entropy requirements.",
+          "marketRationale": "密码生成是安全和开发高频需求，ClawHub市场专业密码生成工具空白",
+          "category": "security",
+          "priceUSD": 4,
+          "createdAt": "2026-03-05 22:35",
+          "publishStatus": "已提交",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/password-generator_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/password-generator",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        },
+        {
+          "name": "csv-data-analyzer",
+          "description": "Analyze CSV files to extract statistics, detect patterns, identify anomalies, and generate data quality reports.",
+          "marketRationale": "数据分析需求增长，CSV数据质量分析是数据工作者刚需，与纯转换工具形成互补",
+          "category": "data-processing",
+          "priceUSD": 6,
+          "createdAt": "2026-03-05 22:35",
+          "publishStatus": "已提交",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/csv-data-analyzer_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/csv-data-analyzer",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        },
+        {
+          "name": "url-shortener-expander",
+          "description": "Shorten long URLs using popular services and expand shortened URLs to reveal their destinations.",
+          "marketRationale": "URL管理是日常办公高频需求，安全性检查功能填补市场空白",
+          "category": "productivity",
+          "priceUSD": 3,
+          "createdAt": "2026-03-05 22:35",
+          "publishStatus": "已提交",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/url-shortener-expander_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/url-shortener-expander",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        },
+        {
+          "name": "text-diff-comparator",
+          "description": "Compare two text files or strings to find differences, generate patches, and visualize changes.",
+          "marketRationale": "代码审查和文档版本对比是开发者刚需，专业diff工具在ClawHub市场空白",
+          "category": "developer-tools",
+          "priceUSD": 5,
+          "createdAt": "2026-03-05 22:35",
+          "publishStatus": "已提交",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/text-diff-comparator_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/text-diff-comparator",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        },
+        {
+          "name": "json-schema-validator",
+          "description": "Validate JSON data against JSON Schema definitions, generate schemas from sample data, and test API responses.",
+          "marketRationale": "API开发和数据验证是后端开发核心需求，JSON Schema工具专业性强",
+          "category": "developer-tools",
+          "priceUSD": 7,
+          "createdAt": "2026-03-05 22:35",
+          "publishStatus": "已提交",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/json-schema-validator_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/json-schema-validator",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        }
+      ]
+    },
+    {
+      "batchId": "batch-2026-03-05-1",
+      "runDate": "2026-03-05",
+      "skillsGenerated": 5,
+      "skills": [
+        {
+          "name": "password-generator",
+          "description": "Generate secure passwords with customizable length, character sets, and strength requirements.",
+          "marketRationale": "密码生成是安全和开发高频需求，ClawHub市场专业密码生成工具空白",
+          "category": "security",
+          "priceUSD": 4,
+          "createdAt": "2026-03-05 22:30",
+          "publishStatus": "待推送",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/01-password-generator_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/password-generator",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        },
+        {
+          "name": "csv-processor",
+          "description": "Process CSV files with filtering, sorting, aggregation, column operations, and format conversion.",
+          "marketRationale": "数据分析需求增长，CSV处理是数据工作者刚需，现有Skill覆盖不足",
+          "category": "data-processing",
+          "priceUSD": 5,
+          "createdAt": "2026-03-05 22:30",
+          "publishStatus": "待推送",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/02-csv-processor_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/csv-processor",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        },
+        {
+          "name": "markdown-formatter",
+          "description": "Format, lint, and convert Markdown documents with table of contents generation and link validation.",
+          "marketRationale": "Markdown已成为文档标准，专业格式化工具在ClawHub市场空白",
+          "category": "content-creation",
+          "priceUSD": 3,
+          "createdAt": "2026-03-05 22:30",
+          "publishStatus": "待推送",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/03-markdown-formatter_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/markdown-formatter",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        },
+        {
+          "name": "system-health-check",
+          "description": "Monitor system health metrics including CPU, memory, disk usage, network connectivity, and service status.",
+          "marketRationale": "系统监控是运维和开发者日常需求，轻量级本地检查工具市场空白",
+          "category": "system-tools",
+          "priceUSD": 5,
+          "createdAt": "2026-03-05 22:30",
+          "publishStatus": "待推送",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/04-system-health-check_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/system-health-check",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        },
+        {
+          "name": "url-encoder",
+          "description": "Encode and decode URLs, query parameters, base64 strings, HTML entities, and perform URL parsing/analysis.",
+          "marketRationale": "Web开发中URL编码是高频操作，专业完整的URL处理工具需求存在",
+          "category": "developer-tools",
+          "priceUSD": 3,
+          "createdAt": "2026-03-05 22:30",
+          "publishStatus": "待推送",
+          "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/05-url-encoder_SKILL.md",
+          "clawhubUrl": "https://clawhub.com/skills/url-encoder",
+          "gumroadUrl": null,
+          "monetizationStatus": "待上线"
+        }
+      ]
     }
   ],
   "stats": {
-    "totalGenerated": 5,
+    "totalGenerated": 15,
     "totalPublished": 5,
     "totalFailed": 0,
-    "lastUpdated": "2026-03-04 01:07",
-    "lastSkillName": "timestamp-converter",
-    "totalSKUs": 5,
-    "totalRevenuePotential": "$20/sale"
+    "totalBatches": 2,
+    "lastUpdated": "2026-03-05 22:40",
+    "lastSkillName": "json-schema-validator",
+    "totalSKUs": 10,
+    "totalRevenuePotential": "$65/sale",
+    "gumroadProducts": 4
   },
   "config": {
     "targetRepo": "https://github.com/LeonardoDpanda/clawhub-skills",

@@ -1,0 +1,8 @@
+name: Publish
+on: workflow_dispatch
+jobs:
+clawhub:
+runs-on: ubuntu-latest
+steps:
+- name: Publish
+run: echo testing

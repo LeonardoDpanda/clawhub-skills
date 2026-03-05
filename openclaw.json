@@ -40,7 +40,12 @@
     "trustedProxies": [
       "::1",
       "127.0.0.1"
-    ]
+    ],
+    "nodes": {
+      "browser": {
+        "mode": "off"
+      }
+    }
   },
   "messages": {
     "ackReactionScope": "group-mentions"
@@ -253,5 +258,17 @@
     "lastRunCommand": "onboard",
     "lastRunMode": "local",
     "lastRunVersion": "2026.2.1"
+  },
+  "browser": {
+    "color": "#00AA00",
+    "defaultProfile": "openclaw",
+    "enabled": true,
+    "executablePath": "/root/.cache/ms-playwright/chromium-1208/chrome-linux64/chrome",
+    "headless": false,
+    "noSandbox": true,
+    "extraArgs": [
+      "--window-size=1920,1080",
+      "--test-type"
+    ]
   }
 }

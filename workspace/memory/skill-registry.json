@@ -1,0 +1,78 @@
+{
+  "skills": [
+    {
+      "name": "config-format-converter",
+      "description": "Convert and validate configuration files between JSON, YAML, and TOML formats.",
+      "marketRationale": "配置文件格式转换市场空白",
+      "createdAt": "2025-03-03 19:04",
+      "publishStatus": "已发布",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/config-format-converter_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/config-format-converter",
+      "gumroadUrl": "https://9708247063907.gumroad.com/l/qpaweb",
+      "monetizationStatus": "已上线",
+      "priceUSD": 5
+    },
+    {
+      "name": "batch-file-renamer",
+      "description": "Batch rename files with powerful patterns, regex support, and preview functionality.",
+      "marketRationale": "批量文件重命名需求高频但现有Skill仅覆盖Telegram特定场景，通用文件重命名工具市场空白",
+      "createdAt": "2025-03-03 21:30",
+      "publishStatus": "已发布",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/batch-file-renamer_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/batch-file-renamer",
+      "gumroadUrl": "https://9708247063907.gumroad.com/l/arybl",
+      "monetizationStatus": "已上线",
+      "priceUSD": 3
+    },
+    {
+      "name": "qr-code-tool",
+      "description": "Generate QR codes for URLs, text, WiFi credentials, contact cards, and more.",
+      "marketRationale": "二维码生成工具在ClawHub市场几乎空白，实际使用场景广泛",
+      "createdAt": "2025-03-03 21:30",
+      "publishStatus": "已发布",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/qr-code-generator_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/qr-code-tool",
+      "gumroadUrl": "https://9708247063907.gumroad.com/l/lompxr",
+      "monetizationStatus": "已上线",
+      "priceUSD": 4
+    },
+    {
+      "name": "rest-api-tester",
+      "description": "Test REST APIs with customizable headers, authentication, and request bodies.",
+      "marketRationale": "API测试是开发者刚需，OpenClaw生态内可直接调用的API测试Skill竞争较少",
+      "createdAt": "2025-03-03 21:30",
+      "publishStatus": "已发布",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/api-tester_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/rest-api-tester",
+      "gumroadUrl": "https://9708247063907.gumroad.com/l/pzksc",
+      "monetizationStatus": "已上线",
+      "priceUSD": 5
+    },
+    {
+      "name": "timestamp-converter",
+      "description": "Convert between Unix timestamps, ISO 8601 dates, and human-readable formats.",
+      "marketRationale": "时间戳转换是开发者日常高频需求，ClawHub市场现有Skill竞争度仅2.960，属低竞争蓝海",
+      "createdAt": "2026-03-04 01:07",
+      "publishStatus": "已发布",
+      "githubPath": "https://github.com/LeonardoDpanda/clawhub-skills/blob/main/timestamp-converter_SKILL.md",
+      "clawhubUrl": "https://clawhub.com/skills/timestamp-converter",
+      "monetizationStatus": "待变现",
+      "priceUSD": 3
+    }
+  ],
+  "stats": {
+    "totalGenerated": 5,
+    "totalPublished": 5,
+    "totalFailed": 0,
+    "lastUpdated": "2026-03-04 01:07",
+    "lastSkillName": "timestamp-converter",
+    "totalSKUs": 5,
+    "totalRevenuePotential": "$20/sale"
+  },
+  "config": {
+    "targetRepo": "https://github.com/LeonardoDpanda/clawhub-skills",
+    "publishChannels": ["webchat", "telegram", "email"],
+    "schedule": "0 17 * * *",
+    "timezone": "Asia/Shanghai"
+  }
+}

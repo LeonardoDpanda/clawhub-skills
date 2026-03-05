@@ -1,0 +1,38 @@
+REST API Tester Pro
+
+🔧 Test APIs without leaving your terminal
+
+Postman is great, but sometimes you just need to quickly hit an endpoint. This OpenClaw skill brings API testing directly to your workflow.
+
+✨ Pro Features:
+• Save & organize API collections
+• Automated test suites
+• Performance benchmarking
+• Response validation
+• Webhook testing server
+• Environment variables
+
+💡 Perfect for:
+• Quick endpoint debugging
+• CI/CD pipeline testing
+• Webhook development
+• Microservice health checks
+• Third-party API validation
+
+🎯 Test faster, ship sooner
+
+---
+
+What you get:
+✅ Lifetime license key
+✅ All future updates
+✅ Email support
+
+System Requirements:
+• Python 3.8+
+• Works on macOS, Linux, Windows
+
+How to activate:
+1. Purchase and receive license key
+2. Run: clawhub config set rest-api-tester.license YOUR_KEY
+3. Start testing APIs!

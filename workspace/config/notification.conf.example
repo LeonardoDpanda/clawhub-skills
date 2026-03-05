@@ -1,0 +1,33 @@
+# Multi-Channel Notification Configuration
+# Copy this file to config/telegram_bot.conf and config/email.conf
+
+# ============================================
+# Telegram Bot Configuration
+# ============================================
+# 
+# Setup Instructions:
+# 1. Open Telegram and search for "@BotFather"
+# 2. Send "/newbot" and follow instructions
+# 3. Copy the bot token (format: 123456789:ABCdefGHIjklMNOpqrsTUVwxyz)
+# 4. Send "/start" to your new bot
+# 5. Get your chat ID: https://api.telegram.org/bot<TOKEN>/getUpdates
+#
+# Uncomment and fill in:
+# BOT_TOKEN="your_bot_token_here"
+# CHAT_ID="your_chat_id_here"
+
+# ============================================
+# Email Configuration (using mail/mailx)
+# ============================================
+#
+# Setup Instructions:
+# 1. Ensure mail/mailx is installed: apt install mailutils
+# 2. Configure SMTP in /etc/mail.rc or use ssmtp/msmtp
+# 3. For Gmail, use App Password (not your main password)
+#
+# Uncomment and fill in:
+# EMAIL_TO="your_email@example.com"
+# EMAIL_FROM="clawhub@yourdomain.com"
+# SMTP_SERVER="smtp.gmail.com:587"
+# SMTP_USER="your_email@example.com"
+# SMTP_PASS="your_app_password"

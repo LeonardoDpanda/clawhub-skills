@@ -1,0 +1,37 @@
+Batch File Renamer Pro
+
+🚀 Rename hundreds of files in seconds, not hours
+
+Tired of manually renaming vacation photos, download folders, or project files one by one? This OpenClaw skill automates it all.
+
+✨ Pro Features:
+• Batch rename unlimited files
+• Regex pattern matching
+• Sequential numbering (001, 002, 003...)
+• Auto timestamp prefixes
+• Preview mode (see changes before applying)
+• Remove special characters automatically
+
+💡 Perfect for:
+• Photographers organizing shoots
+• Developers cleaning up projects
+• Content creators managing assets
+• Anyone with messy download folders
+
+🎯 Stop clicking. Start automating.
+
+---
+
+What you get:
+✅ Lifetime license key
+✅ All future updates
+✅ Email support
+
+System Requirements:
+• Python 3.8+
+• Works on macOS, Linux, Windows
+
+How to activate:
+1. Purchase and receive license key
+2. Run: clawhub config set batch-file-renamer.license YOUR_KEY
+3. Enjoy unlimited renaming!

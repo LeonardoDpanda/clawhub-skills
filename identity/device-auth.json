@@ -1,14 +1,18 @@
 {
   "version": 1,
-  "deviceId": "b8fb9587bd530f93b15b5b2a8469f1d45847b6479dd2b41f05497b8fc8ac2b68",
+  "deviceId": "2382ae5a9b1a5d4ee17c3ff0f437c36ce50c4e571a06397b229a371a77e6d8a6",
   "tokens": {
     "operator": {
-      "token": "834596012a314ee98551d60f676048de",
+      "token": "9HO7i-anEw7NBKE60b70wKeDCfm9TaIMOETw8Hl-CB4",
       "role": "operator",
       "scopes": [
-        "operator.admin"
+        "operator.admin",
+        "operator.approvals",
+        "operator.pairing",
+        "operator.read",
+        "operator.write"
       ],
-      "updatedAtMs": 1770802505979
+      "updatedAtMs": 1772684769310
     }
   }
 }

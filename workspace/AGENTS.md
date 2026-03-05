@@ -217,3 +217,39 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 重启服务使用 `sh /workspace/projects/scripts/restart.sh` 而不是 `openclaw gateway restart`
 停止服务使用 `sh /workspace/projects/scripts/stop.sh` 而不是 `openclaw gateway stop`
 
+## 🎯 Skill Auto-Publisher 系统
+
+这是一个全自动化的 Skill 生成和发布系统。
+
+### 用户指令响应
+
+当用户发送以下指令时：
+
+| 指令 | 动作 |
+|-----|------|
+| `立即生成并发布1个高价值Skill` | 执行完整流程：市场分析 → 生成 → GitHub推送 → ClawHub发布 → 更新台账 → 多渠道通知 |
+| `查询Skill台账` | 读取 `memory/skill-registry.json` 并格式化输出统计信息 |
+| `验证自动化链路` | 检查 GitHub/ClawHub/通知渠道的连接状态 |
+
+### 执行流程
+
+1. **市场分析**: 分析 ClawHub 市场需求，识别空白方向
+2. **Skill生成**: 生成符合规范的 SKILL.md 内容
+3. **GitHub推送**: 推送到 `https://github.com/LeonardoDpanda/clawhub-skills`
+4. **ClawHub发布**: 使用 `clawhub publish` 命令发布
+5. **台账更新**: 记录到 `memory/skill-registry.json`
+6. **多渠道通知**: WebChat + Telegram + Email
+
+### 关键文件
+
+- `skills/skill-auto-publisher/SKILL.md` - Skill 生成器技能
+- `scripts/auto-skill-pipeline.sh` - 主自动化脚本
+- `scripts/query-registry.sh` - 台账查询工具
+- `memory/skill-registry.json` - 台账数据
+- `docs/AUTO_SKILL_SETUP.md` - 配置指南
+
+### 定时触发
+
+系统配置为每天凌晨1点（北京时间）自动执行。
+通过 HEARTBEAT.md 中的逻辑检查触发条件。
+

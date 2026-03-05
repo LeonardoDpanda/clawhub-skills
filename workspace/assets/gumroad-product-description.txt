@@ -1,0 +1,35 @@
+Config Format Converter Pro
+
+🚀 一键转换 JSON / YAML / TOML / XML / INI 配置文件
+
+✨ 专业版功能：
+• 批量文件转换 - 一键处理整个项目目录
+• 高级格式支持 - XML, INI, Properties 全支持
+• API 接口调用 - 集成到自动化工作流
+• 自定义模板 - 保存常用转换规则
+• 无广告、优先技术支持
+
+💡 适合场景：
+• 跨平台项目迁移（npm → Python Poetry）
+• CI/CD 配置标准化
+• 微服务配置统一管理
+• 开发团队配置规范
+
+🎯 立即升级，提升 10x 效率！
+
+---
+
+What you get:
+✅ Lifetime license key
+✅ All future updates
+✅ Email support
+✅ 30-day money-back guarantee
+
+System Requirements:
+• Python 3.8+
+• Works on macOS, Linux, Windows
+
+How to activate:
+1. Purchase and receive license key via email
+2. Run: clawhub config set config-format-converter.license YOUR_KEY
+3. Enjoy pro features!

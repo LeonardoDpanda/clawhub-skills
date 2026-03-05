@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Config Format Converter - 购买专业版</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .plan {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .plan:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+        .plan.selected {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+        .plan-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .plan-name {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+        .plan-price {
+            font-size: 24px;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .plan-desc {
+            color: #666;
+            font-size: 14px;
+        }
+        .discount {
+            background: #ff6b6b;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .payment-section {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .qr-code {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .qr-code img {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .email-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .email-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #5568d3;
+        }
+        .note {
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 升级到专业版</h1>
+        <p class="subtitle">解锁批量转换、高级格式和API功能</p>
+        
+        <div class="plan selected" onclick="selectPlan('monthly')">
+            <div class="plan-header">
+                <span class="plan-name">月度会员</span>
+                <span class="plan-price">¥29</span>
+            </div>
+            <p class="plan-desc">按月付费，随时取消</p>
+        </div>
+        
+        <div class="plan" onclick="selectPlan('yearly')">
+            <div class="plan-header">
+                <span class="plan-name">年度会员<span class="discount">省17%</span></span>
+                <span class="plan-price">¥199</span>
+            </div>
+            <p class="plan-desc">一次付费，全年使用，相当于¥16.6/月</p>
+        </div>
+        
+        <div class="payment-section">
+            <input type="email" class="email-input" placeholder="请输入您的邮箱（用于接收授权码）" id="email">
+            
+            <div class="qr-code">
+                <p>请使用微信或支付宝扫码支付</p>
+                <img src="wechat-qr.png" alt="微信支付" id="wechat-qr">
+                <p style="margin-top: 10px; color: #666;">支付金额: <strong id="amount">¥29</strong></p>
+            </div>
+            
+            <button class="submit-btn" onclick="submitPayment()">
+                我已完成支付，获取授权码
+            </button>
+        </div>
+        
+        <p class="note">
+            支付完成后，授权码将在5分钟内发送到您的邮箱<br>
+            如有问题请联系微信: YourWeChatID
+        </p>
+    </div>
+
+    <script>
+        let selectedPlan = 'monthly';
+        
+        function selectPlan(plan) {
+            selectedPlan = plan;
+            document.querySelectorAll('.plan').forEach(p => p.classList.remove('selected'));
+            event.currentTarget.classList.add('selected');
+            document.getElementById('amount').textContent = plan === 'monthly' ? '¥29' : '¥199';
+        }
+        
+        function submitPayment() {
+            const email = document.getElementById('email').value;
+            if (!email) {
+                alert('请输入邮箱地址');
+                return;
+            }
+            
+            // 收集支付信息发送到后端
+            fetch('/api/submit-payment', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    email: email,
+                    plan: selectedPlan,
+                    timestamp: new Date().toISOString()
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert('已收到您的支付信息，授权码将在核实后发送到您的邮箱');
+            })
+            .catch(err => {
+                alert('提交成功！请等待审核');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+QR Code Tool Pro
+
+📱 Generate QR codes that actually look good
+
+WiFi passwords, business cards, app links — stop typing long URLs and start scanning.
+
+✨ Pro Features:
+• Custom colors & styling
+• Add your logo to the center
+• WiFi auto-connect codes
+• Contact cards (vCard format)
+• Batch generate for campaigns
+• High-res PNG export
+
+💡 Use cases:
+• Share WiFi without spelling it out
+• Digital business cards
+• Marketing materials
+• Event check-ins
+• Product packaging
+
+🎯 Professional QR codes in 10 seconds
+
+---
+
+What you get:
+✅ Lifetime license key
+✅ All future updates
+✅ Email support
+
+System Requirements:
+• Python 3.8+
+• Works on macOS, Linux, Windows
+
+How to activate:
+1. Purchase and receive license key
+2. Run: clawhub config set qr-code-tool.license YOUR_KEY
+3. Create beautiful QR codes!

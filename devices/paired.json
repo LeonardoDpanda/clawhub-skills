@@ -86,5 +86,46 @@
     },
     "createdAtMs": 1770802505970,
     "approvedAtMs": 1770802505970
+  },
+  "2382ae5a9b1a5d4ee17c3ff0f437c36ce50c4e571a06397b229a371a77e6d8a6": {
+    "deviceId": "2382ae5a9b1a5d4ee17c3ff0f437c36ce50c4e571a06397b229a371a77e6d8a6",
+    "publicKey": "mDEpC7ZYPhEZdEoXcJGCTU2ca-folcNDul8Gao9erlw",
+    "platform": "linux",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.admin",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.admin",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "9HO7i-anEw7NBKE60b70wKeDCfm9TaIMOETw8Hl-CB4",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.write"
+        ],
+        "createdAtMs": 1772684690386
+      }
+    },
+    "createdAtMs": 1772684690386,
+    "approvedAtMs": 1772684690386
   }
 }

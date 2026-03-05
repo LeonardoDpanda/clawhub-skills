@@ -9,73 +9,28 @@ runs-on: ubuntu-latest
 steps:
 - uses: actions/checkout@v4
 
-- name: Publish 10 Skills to ClawHub
+- name: Publish Skills to ClawHub
 env:
 CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
 run: |
-echo "Publishing 10 Skills..."
+echo "Publishing 10 Skills to ClawHub..."
 
-# Skill 1
 curl -X POST "https://clawhub.com/api/skills" \
 -H "Authorization: Bearer $CLAWHUB_TOKEN" \
 -H "Content-Type: application/json" \
 -d '{"name":"password-generator","description":"Generate secure passwords","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/password-generator_SKILL.md","version":"1.0.0"}' || true
 
-# Skill 2
 curl -X POST "https://clawhub.com/api/skills" \
 -H "Authorization: Bearer $CLAWHUB_TOKEN" \
 -H "Content-Type: application/json" \
 -d '{"name":"csv-processor","description":"Process CSV files","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/csv-processor_SKILL.md","version":"1.0.0"}' || true
 
-# Skill 3
 curl -X POST "https://clawhub.com/api/skills" \
 -H "Authorization: Bearer $CLAWHUB_TOKEN" \
 -H "Content-Type: application/json" \
 -d '{"name":"markdown-formatter","description":"Format Markdown","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/markdown-formatter_SKILL.md","version":"1.0.0"}' || true
 
-# Skill 4
-curl -X POST "https://clawhub.com/api/skills" \
--H "Authorization: Bearer $CLAWHUB_TOKEN" \
--H "Content-Type: application/json" \
--d '{"name":"system-health-check","description":"Monitor system health","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/system-health-check_SKILL.md","version":"1.0.0"}' || true
-
-# Skill 5
-curl -X POST "https://clawhub.com/api/skills" \
--H "Authorization: Bearer $CLAWHUB_TOKEN" \
--H "Content-Type: application/json" \
--d '{"name":"url-encoder","description":"Encode URLs","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/url-encoder_SKILL.md","version":"1.0.0"}' || true
-
-# Skill 6
-curl -X POST "https://clawhub.com/api/skills" \
--H "Authorization: Bearer $CLAWHUB_TOKEN" \
--H "Content-Type: application/json" \
--d '{"name":"csv-data-analyzer","description":"Analyze CSV data","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/csv-data-analyzer_SKILL.md","version":"1.0.0"}' || true
-
-# Skill 7
-curl -X POST "https://clawhub.com/api/skills" \
--H "Authorization: Bearer $CLAWHUB_TOKEN" \
--H "Content-Type: application/json" \
--d '{"name":"url-shortener-expander","description":"Shorten URLs","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/url-shortener-expander_SKILL.md","version":"1.0.0"}' || true
-
-# Skill 8
-curl -X POST "https://clawhub.com/api/skills" \
--H "Authorization: Bearer $CLAWHUB_TOKEN" \
--H "Content-Type: application/json" \
--d '{"name":"text-diff-comparator","description":"Compare text diff","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/text-diff-comparator_SKILL.md","version":"1.0.0"}' || true
-
-# Skill 9
-curl -X POST "https://clawhub.com/api/skills" \
--H "Authorization: Bearer $CLAWHUB_TOKEN" \
--H "Content-Type: application/json" \
--d '{"name":"json-schema-validator","description":"Validate JSON Schema","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/json-schema-validator_SKILL.md","version":"1.0.0"}' || true
-
-# Skill 10
-curl -X POST "https://clawhub.com/api/skills" \
--H "Authorization: Bearer $CLAWHUB_TOKEN" \
--H "Content-Type: application/json" \
--d '{"name":"timestamp-converter","description":"Convert timestamps","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/timestamp-converter_SKILL.md","version":"1.0.0"}' || true
-
-echo "Done!"
+echo "ClawHub completed!"
 
 publish-gumroad:
 runs-on: ubuntu-latest
@@ -85,9 +40,8 @@ steps:
 env:
 GUMROAD_TOKEN: ${{ secrets.GUMROAD_TOKEN }}
 run: |
-echo "Creating 10 Gumroad products..."
+echo "Creating Gumroad products..."
 
-# Product 1
 curl -X POST "https://api.gumroad.com/v2/products" \
 -H "Authorization: Bearer $GUMROAD_TOKEN" \
 -d "product[name]=Password Generator" \
@@ -95,7 +49,6 @@ curl -X POST "https://api.gumroad.com/v2/products" \
 -d "product[currency]=usd" \
 -d "product[is_physical]=false" || true
 
-# Product 2
 curl -X POST "https://api.gumroad.com/v2/products" \
 -H "Authorization: Bearer $GUMROAD_TOKEN" \
 -d "product[name]=CSV Processor" \
@@ -103,7 +56,6 @@ curl -X POST "https://api.gumroad.com/v2/products" \
 -d "product[currency]=usd" \
 -d "product[is_physical]=false" || true
 
-# Product 3
 curl -X POST "https://api.gumroad.com/v2/products" \
 -H "Authorization: Bearer $GUMROAD_TOKEN" \
 -d "product[name]=Markdown Formatter" \
@@ -111,4 +63,4 @@ curl -X POST "https://api.gumroad.com/v2/products" \
 -d "product[currency]=usd" \
 -d "product[is_physical]=false" || true
 
-echo "Done!"
+echo "Gumroad completed!"

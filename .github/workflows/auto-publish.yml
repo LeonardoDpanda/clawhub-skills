@@ -1,21 +1,28 @@
-name: Auto Publish Skills
+name: Publish Skills
+
 on:
 workflow_dispatch:
-jobs:
-publish-clawhub:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v4
-- name: Publish Skills
-env:
-CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
-run: curl -X POST "https://clawhub.com/api/skills" -H "Authorization: Bearer ${CLAWHUB_TOKEN}" -H "Content-Type: application/json" -d '{"name":"password-generator","description":"Generate secure passwords","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/password-generator_SKILL.md"}' && curl -X POST "https://clawhub.com/api/skills" -H "Authorization: Bearer ${CLAWHUB_TOKEN}" -H "Content-Type: application/json" -d '{"name":"csv-processor","description":"Process CSV files","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/csv-processor_SKILL.md"}' && curl -X POST "https://clawhub.com/api/skills" -H "Authorization: Bearer ${CLAWHUB_TOKEN}" -H "Content-Type: application/json" -d '{"name":"markdown-formatter","description":"Format Markdown","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/markdown-formatter_SKILL.md"}'
 
-publish-gumroad:
+jobs:
+publish:
 runs-on: ubuntu-latest
-needs: publish-clawhub
 steps:
-- name: Create Products
+- name: Publish to ClawHub
 env:
-GUMROAD_TOKEN: ${{ secrets.GUMROAD_TOKEN }}
-run: curl -X POST "https://api.gumroad.com/v2/products" -H "Authorization: Bearer ${GUMROAD_TOKEN}" -d "product[name]=Password Generator" -d "product[price]=400" -d "product[currency]=usd" && curl -X POST "https://api.gumroad.com/v2/products" -H "Authorization: Bearer ${GUMROAD_TOKEN}" -d "product[name]=CSV Processor" -d "product[price]=500" -d "product[currency]=usd" && curl -X POST "https://api.gumroad.com/v2/products" -H "Authorization: Bearer ${GUMROAD_TOKEN}" -d "product[name]=Markdown Formatter" -d "product[price]=300" -d "product[currency]=usd"
+TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
+run: |
+curl -s -X POST "https://clawhub.com/api/skills" \
+-H "Authorization: Bearer $TOKEN" \
+-H "Content-Type: application/json" \
+-d '{"name":"password-generator","description":"Generate secure passwords","github_url":"https://github.com/LeonardoDpanda/clawhub-skills/blob/main/password-generator_SKILL.md","version":"1.0.0"}'
+
+- name: Create Gumroad Product
+env:
+TOKEN: ${{ secrets.GUMROAD_TOKEN }}
+run: |
+curl -s -X POST "https://api.gumroad.com/v2/products" \
+-H "Authorization: Bearer $TOKEN" \
+-d "product[name]=Password Generator" \
+-d "product[price]=400" \
+-d "product[currency]=usd" \
+-d "product[is_physical]=false"

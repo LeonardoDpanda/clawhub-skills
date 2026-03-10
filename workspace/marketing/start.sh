@@ -1,0 +1,35 @@
+#!/bin/bash
+# X推广系统 - 一键启动脚本
+
+echo "🚀 X (Twitter) 自动化推广系统"
+echo "================================"
+echo ""
+
+cd /workspace/projects/workspace/marketing
+
+echo "📋 可用命令:"
+echo ""
+echo "1. 测试 API 连接:"
+echo "   python3 test_api.py"
+echo ""
+echo "2. 发布单条推文:"
+echo "   python3 post_tweet.py '你的推文内容'"
+echo ""
+echo "3. 运行自动化任务:"
+echo "   bash twitter-bot.sh"
+echo ""
+echo "4. 生成内容队列:"
+echo "   python3 generate_queue.py"
+echo ""
+echo "5. 完整API工具:"
+echo "   python3 twitter_api.py"
+echo ""
+echo "📁 重要文件:"
+echo "   - README.md          完整文档"
+echo "   - STARTUP_REPORT.md  启动报告"
+echo "   - queue/             内容队列"
+echo "   - logs/              运行日志"
+echo ""
+echo "⏰ 已配置定时任务（09:00, 14:00, 20:00）"
+echo ""
+echo "✅ 系统已就绪!"

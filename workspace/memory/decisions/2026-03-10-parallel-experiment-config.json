@@ -1,0 +1,47 @@
+{
+  "experiment_id": "parallel-test-2026-03-10",
+  "start_time": "2026-03-10T02:10:00+08:00",
+  "end_time": "2026-03-13T02:10:00+08:00",
+  "duration": "72_hours",
+  "strategy": "parallel_validation",
+  
+  "experiments": [
+    {
+      "id": "A",
+      "name": "推广现有Skills",
+      "focus": "流量验证",
+      "approach": "推广15个现有Skills，每天3帖Reddit",
+      "success_criteria": "总访问量>150 或 至少1个Skill>20访问",
+      "session_key": "agent:main:subagent:3fd8794c-f38a-4df5-b12e-8c5f330f917b"
+    },
+    {
+      "id": "B",
+      "name": "精品Skill生成",
+      "focus": "质量测试",
+      "approach": "生成1个超高质量Skill，投入5-10倍时间",
+      "success_criteria": "访问量>50 或 首笔销售 或 3+用户询问",
+      "session_key": "agent:main:subagent:21fdf42c-9bbd-48a2-88f9-1acc1ca1a039"
+    },
+    {
+      "id": "C",
+      "name": "新方向探索",
+      "focus": "市场验证",
+      "approach": "完全不同品类（内容创作者/电商/教育/生活工具）",
+      "success_criteria": "访问量>30 或 任何互动反馈",
+      "session_key": "agent:main:subagent:82497813-591f-45d8-994e-a2dc46999ce0"
+    }
+  ],
+  
+  "decision_framework": {
+    "day_3_evaluation": "对比3个实验的数据",
+    "winner_selection": "数据最好的实验 → 放大资源",
+    "loser_handling": "数据差的实验 → 停止，总结经验",
+    "next_phase": "基于胜者制定规模化策略"
+  },
+  
+  "cost_estimate": {
+    "token_multiplier": 3,
+    "time_equivalent": "人类2周工作",
+    "validation_speed": "3天 vs 14天 (4.7x faster)"
+  }
+}

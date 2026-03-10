@@ -91,6 +91,29 @@
           "api": "openai-completions"
         }
       ]
+    },
+    "ollama": {
+      "baseUrl": "http://127.0.0.1:11434",
+      "api": "ollama",
+      "models": [
+        {
+          "id": "qwen3-embedding:0.6b",
+          "name": "qwen3-embedding:0.6b",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 32768,
+          "maxTokens": 8192
+        }
+      ],
+      "apiKey": "ollama-local"
     }
   }
 }

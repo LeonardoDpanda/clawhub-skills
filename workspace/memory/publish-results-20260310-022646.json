@@ -1,0 +1,103 @@
+{"timestamp":"2026-03-10T02:27:35+08:00","total":34,"successful":0,"existing":0,"failed":34,"published":[],"existing":[],"failed":[Publishing: regex-tester
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"regex-tester","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: data-format-converter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"data-format-converter","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: coze-web-search
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"coze-web-search","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: json-schema-validator
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"json-schema-validator","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: website-monitor-alt
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"website-monitor-alt","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: json-path-query
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"json-path-query","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: meeting-summarizer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"meeting-summarizer","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: url-encoder
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"url-encoder","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: image-reader
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"image-reader","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: rest-api-tester
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"rest-api-tester","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: password-generator
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"password-generator","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: ssl-certificate-checker
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"ssl-certificate-checker","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: config-format-converter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"config-format-converter","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: docker-compose-validator
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"docker-compose-validator","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: qr-code-tool
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"qr-code-tool","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: website-monitor
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"website-monitor","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: base64-toolkit
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"base64-toolkit","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: csv-processor
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"csv-processor","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: cron-expression-parser
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"cron-expression-parser","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: batch-file-renamer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"batch-file-renamer","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: sql-formatter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"sql-formatter","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: text-diff-comparator
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"text-diff-comparator","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: coze-voice-gen
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"coze-voice-gen","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: url-shortener-expander
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"url-shortener-expander","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: skill-auto-publisher
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"skill-auto-publisher","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: system-health-check
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"system-health-check","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: youtube-title-optimizer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"youtube-title-optimizer","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: http-headers-analyzer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"http-headers-analyzer","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: color-code-converter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"color-code-converter","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: coze-image-gen
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"coze-image-gen","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: jwt-token-inspector
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"jwt-token-inspector","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: csv-data-analyzer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"csv-data-analyzer","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: rest-api-tester-alt
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"rest-api-tester-alt","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"},Publishing: markdown-formatter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more
+{"name":"markdown-formatter","status":"failed","code":400,"error":"Publish payload: changelog: invalid value; displayName: invalid value; files: invalid value; +3 more"}]}

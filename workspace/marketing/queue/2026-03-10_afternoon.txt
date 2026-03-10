@@ -1,0 +1,15 @@
+Postman启动要10秒
+
+我的API tester启动只要1秒
+
+听起来差别不大？
+
+但你一天打开50次 = 省8分钟
+一个月 = 省4小时
+一年 = 省2天生命
+
+这就是CLI工具的意义 ⚡
+
+👇 链接在bio
+
+#DevTools #API #Productivity

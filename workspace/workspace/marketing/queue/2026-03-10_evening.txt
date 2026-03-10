@@ -1,0 +1,13 @@
+Config格式地狱：
+
+Tool A要JSON
+Tool B要YAML
+Tool C要TOML
+
+手动转换？复制粘贴错误让你崩溃
+
+这个脚本3秒搞定，带验证 ✅
+
+👇 免费使用
+
+#DevOps #Config #Automation

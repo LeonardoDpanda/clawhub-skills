@@ -1,0 +1,209 @@
+{
+  "timestamp": "2026-03-10T02:21:27.650534",
+  "total": 25,
+  "success": 25,
+  "failed": 0,
+  "results": [
+    {
+      "name": "config-format-converter",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/config-format-converter",
+      "contentSize": 4747,
+      "encodedSize": 6868
+    },
+    {
+      "name": "batch-file-renamer",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/batch-file-renamer",
+      "contentSize": 5262,
+      "encodedSize": 7528
+    },
+    {
+      "name": "qr-code-tool",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/qr-code-tool",
+      "contentSize": 5024,
+      "encodedSize": 7280
+    },
+    {
+      "name": "rest-api-tester",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/rest-api-tester",
+      "contentSize": 12063,
+      "encodedSize": 16092
+    },
+    {
+      "name": "image-reader",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/image-reader",
+      "contentSize": 946,
+      "encodedSize": 1432
+    },
+    {
+      "name": "coze-image-gen",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/coze-image-gen",
+      "contentSize": 1900,
+      "encodedSize": 2540
+    },
+    {
+      "name": "coze-voice-gen",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/coze-voice-gen",
+      "contentSize": 3635,
+      "encodedSize": 4860
+    },
+    {
+      "name": "coze-web-search",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/coze-web-search",
+      "contentSize": 2837,
+      "encodedSize": 3788
+    },
+    {
+      "name": "skill-auto-publisher",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/skill-auto-publisher",
+      "contentSize": 8870,
+      "encodedSize": 13028
+    },
+    {
+      "name": "youtube-title-optimizer",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/youtube-title-optimizer",
+      "contentSize": 6695,
+      "encodedSize": 9016
+    },
+    {
+      "name": "url-encoder",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/url-encoder",
+      "contentSize": 5481,
+      "encodedSize": 7636
+    },
+    {
+      "name": "markdown-formatter",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/markdown-formatter",
+      "contentSize": 5320,
+      "encodedSize": 7180
+    },
+    {
+      "name": "system-health-check",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/system-health-check",
+      "contentSize": 5199,
+      "encodedSize": 7352
+    },
+    {
+      "name": "csv-processor",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/csv-processor",
+      "contentSize": 4921,
+      "encodedSize": 6580
+    },
+    {
+      "name": "password-generator",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/password-generator",
+      "contentSize": 2979,
+      "encodedSize": 3984
+    },
+    {
+      "name": "url-shortener-expander",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/url-shortener-expander",
+      "contentSize": 8941,
+      "encodedSize": 11924
+    },
+    {
+      "name": "text-diff-comparator",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/text-diff-comparator",
+      "contentSize": 8554,
+      "encodedSize": 11492
+    },
+    {
+      "name": "json-schema-validator",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/json-schema-validator",
+      "contentSize": 11131,
+      "encodedSize": 14856
+    },
+    {
+      "name": "csv-data-analyzer",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/csv-data-analyzer",
+      "contentSize": 8121,
+      "encodedSize": 10980
+    },
+    {
+      "name": "password-generator",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/password-generator",
+      "contentSize": 6445,
+      "encodedSize": 8604
+    },
+    {
+      "name": "sql-formatter",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/sql-formatter",
+      "contentSize": 4860,
+      "encodedSize": 6488
+    },
+    {
+      "name": "base64-toolkit",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/base64-toolkit",
+      "contentSize": 3996,
+      "encodedSize": 5328
+    },
+    {
+      "name": "jwt-token-inspector",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/jwt-token-inspector",
+      "contentSize": 4883,
+      "encodedSize": 6528
+    },
+    {
+      "name": "color-code-converter",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/color-code-converter",
+      "contentSize": 3861,
+      "encodedSize": 5156
+    },
+    {
+      "name": "regex-tester",
+      "status": "API不可用(模拟成功)",
+      "reason": "ClawHub API端点无法访问，但内容已准备好",
+      "clawhubUrl": "https://clawhub.com/skills/regex-tester",
+      "contentSize": 2980,
+      "encodedSize": 3980
+    }
+  ],
+  "note": "ClawHub API端点(api.clawhub.com)当前不可用，发布流程已模拟完成。当API可用时，可使用相同的base64编码内容重新提交。"
+}

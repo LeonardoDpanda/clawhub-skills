@@ -4,13 +4,25 @@
 - Check interval: Every 30 minutes
 - Trigger condition: Beijing time 01:00 (UTC 17:00)
 
-## Daily Skill Auto-Generation Task (Batch × 5)
+## Daily Skill Auto-Generation Task (PAUSED - 推广优先阶段)
 
-### Trigger Logic
-1. Read `memory/heartbeat-state.json` for last run timestamp
-2. If current time is 01:00-01:30 Beijing time AND no run today:
-   - Execute: Spawn subagent with task "生成并发布5个高价值Skill"
-   - Update state file with today's date
+### Current Strategy (2026-03-10更新)
+**阶段**: 推广冲刺期  
+**目标**: 用现有35个Skills验证变现可行性  
+**生成**: 暂停（0个/天）  
+**推广**: 全力（Reddit 3帖/天 + HN + Dev.to）
+
+### Trigger Logic (已暂停自动生成)
+1. ~~Read `memory/heartbeat-state.json` for last run timestamp~~
+2. ~~If current time is 01:00-01:30 Beijing time AND no run today:~~
+3. **新逻辑**: 检查推广数据，每日生成数据报告
+4. **Resume条件**: 找到变现信号（访问量>100 或 首笔销售）
+
+### Resume Criteria
+- [ ] 某个Skill Gumroad访问量 > 100
+- [ ] 或 首笔销售完成
+- [ ] 或 Reddit讨论度 > 10互动/帖
+- [ ] 或 GitHub Stars日增长 > 5
 
 ### State Tracking
 ```json

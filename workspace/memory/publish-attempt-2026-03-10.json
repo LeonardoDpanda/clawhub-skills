@@ -1,0 +1,87 @@
+{
+  "publishAttempt": {
+    "timestamp": "2026-03-10T02:30:00+08:00",
+    "status": "BLOCKED",
+    "reason": "Missing file storage upload endpoint",
+    "totalSkills": 32,
+    "successful": 0,
+    "failed": 32,
+    "existing": 0
+  },
+  "skillsAttempted": [
+    {"name": "config-format-converter", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "batch-file-renamer", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "qr-code-tool", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "rest-api-tester", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "ssl-certificate-checker", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "http-headers-analyzer", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "cron-expression-parser", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "docker-compose-validator", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "json-path-query", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "password-generator", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "csv-processor", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "markdown-formatter", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "system-health-check", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "url-encoder", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "csv-data-analyzer", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "text-diff-comparator", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "json-schema-validator", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "url-shortener-expander", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "regex-tester", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "color-code-converter", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "base64-toolkit", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "jwt-token-inspector", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "sql-formatter", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "meeting-summarizer", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "data-format-converter", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "website-monitor", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "image-reader", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "coze-image-gen", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "coze-voice-gen", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "coze-web-search", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "skill-auto-publisher", "status": "API_BLOCKED", "error": "storageId required"},
+    {"name": "youtube-title-optimizer", "status": "API_BLOCKED", "error": "storageId required"}
+  ],
+  "technicalFindings": {
+    "apiEndpoint": "https://clawhub.ai/api/v1/skills",
+    "authentication": "VALID",
+    "getRequest": "WORKING",
+    "postRequest": "BLOCKED - Missing storageId",
+    "requiredFields": [
+      "slug",
+      "displayName",
+      "version",
+      "changelog",
+      "visibility",
+      "summary",
+      "source (object with type, url, owner, repo, path, commit, kind, ref, importedAt)",
+      "files (array with path, name, content, size, sha256, storageId, encoding)"
+    ],
+    "missingInfrastructure": [
+      "File upload endpoint for storageId generation",
+      "Storage service API (/api/v1/files, /api/v1/storage/upload, /api/v1/blobs all return 404)"
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": 1,
+      "action": "Install and use ClawHub CLI",
+      "command": "npm install -g clawhub && clawhub login && clawhub publish ./skill-directory"
+    },
+    {
+      "priority": 2,
+      "action": "Configure GitHub webhook auto-import",
+      "details": "Set up webhook from https://github.com/LeonardoDpanda/clawhub-skills"
+    },
+    {
+      "priority": 3,
+      "action": "Contact ClawHub support for file upload API documentation"
+    }
+  ],
+  "filesReady": {
+    "location": "/workspace/projects/workspace/skills/*/SKILL.md",
+    "github": "https://github.com/LeonardoDpanda/clawhub-skills",
+    "total": 32,
+    "allContentPrepared": true
+  }
+}

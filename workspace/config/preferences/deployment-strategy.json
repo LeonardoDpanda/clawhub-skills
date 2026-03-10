@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "created_at": "2026-03-10",
+  "updated_at": "2026-03-10",
+  "owner": "user",
+  "agent": "me",
+  
+  "deployment_strategy": {
+    "phase": "promotion_sprint",
+    "phase_started": "2026-03-10",
+    "frequency": "paused",
+    "batch_size": 0,
+    "promotion_focus": {
+      "active": true,
+      "daily_posts_reddit": 3,
+      "weekly_posts_hn": 1,
+      "weekly_articles_devto": 2,
+      "target": "drive_traffic_to_existing_35_skills"
+    },
+    "resume_generation_when": [
+      "gumroad_views_per_skill > 100",
+      "first_sale_completed",
+      "reddit_engagement > 10_per_post",
+      "github_stars_daily_growth > 5"
+    ],
+    "posting_schedule": {
+      "reddit": {
+        "max_posts_per_day": 3,
+        "optimal_times": ["09:00", "14:00", "20:00"],
+        "target_subreddits": ["webdev", "sysadmin", "programming", "entrepreneur"]
+      },
+      "hackernews": {
+        "frequency": "weekly",
+        "optimal_day": "tuesday",
+        "optimal_time": "08:00"
+      },
+      "devto": {
+        "frequency": "biweekly",
+        "content_type": "tutorial"
+      }
+    },
+    "a_b_testing": {
+      "enabled": true,
+      "test_duration_hours": 48,
+      "minimum_sample_size": 100,
+      "confidence_level": 0.95
+    }
+  },
+  
+  "content_guidelines": {
+    "tone": "helpful_expert",
+    "avoid": ["spammy", "overly_promotional", "clickbait"],
+    "emphasize": ["value_first", "problem_solution", "social_proof"],
+    "transparency": {
+      "disclose_ownership": true,
+      "admit_limitations": true,
+      "respond_to_criticism": "constructive"
+    }
+  },
+  
+  "pricing_strategy": {
+    "philosophy": "value_based",
+    "anchor_pricing": true,
+    "psychological_pricing": true,
+    "discounts": {
+      "bundle_discount": 0.2,
+      "launch_discount": 0.3,
+      "loyalty_discount": 0.15
+    }
+  },
+  
+  "risk_tolerance": {
+    "financial": {
+      "max_auto_spend_per_day": 0,
+      "require_approval_above": 50
+    },
+    "platform_risk": {
+      "avoid_new_untested_platforms": true,
+      "diversify_across_platforms": true,
+      "backup_accounts": true
+    },
+    "reputation_risk": {
+      "quality_threshold": "high",
+      "respond_to_negative_feedback": true,
+      "avoid_controversial_topics": true
+    }
+  },
+  
+"legal_compliance": {
+    "strict_prohibited": [
+      "copyright_infringement",
+      "trademark_violation", 
+      "fraud",
+      "money_laundering",
+      "unlicensed_financial_services",
+      "data_privacy_violations",
+      "spam_regulations_violation",
+      "consumer_protection_law_violations"
+    ],
+    "gray_area": {
+      "description": "High ROI but legally ambiguous activities",
+      "handling": "must_discuss_before_execution",
+      "examples": [
+        "aggressive_marketing_tactics",
+        "data_scraping",
+        "automated_interaction",
+        "jurisdiction_shopping"
+      ]
+    },
+    "jurisdictions": {
+      "primary": "CN",
+      "secondary": ["US", "EU"],
+      "compliance_requirements": ["GDPR", "CCPA", "PIPL"]
+    }
+  },
+  
+  "notification_preferences": {
+    "immediate": [
+      "security_incident",
+      "legal_risk_detected",
+      "significant_revenue",
+      "platform_ban"
+    ],
+    "daily_digest": [
+      "metrics_summary",
+      "completed_tasks",
+      "upcoming_schedule"
+    ],
+    "weekly_report": [
+      "roi_analysis",
+      "strategy_effectiveness",
+      "recommendations"
+    ]
+  },
+  
+  "strategy_levels": {
+    "level_1_overall": {
+      "description": "整体商业策略",
+      "records_location": "memory/strategies/overall/",
+      "examples": ["市场选择", "变现模式", "资源分配原则"]
+    },
+    "level_2_project": {
+      "description": "单个项目策略",
+      "records_location": "memory/strategies/projects/{project_name}/",
+      "required_fields": ["目标", "假设", "验证方法", "退出条件", "预算上限"]
+    },
+    "level_3_execution": {
+      "description": "执行环节策略",
+      "records_location": "memory/strategies/execution/{task_id}/",
+      "required_fields": ["执行方案", "预期结果", "时间节点", "风险点", "备选方案"]
+    }
+  },
+  
+  "evolution_log": [
+    {
+      "date": "2026-03-10",
+      "change": "Initial strategy configuration",
+      "rationale": "User wants full automation with transparent preferences",
+      "approved_by": "user"
+    }
+  ]
+}

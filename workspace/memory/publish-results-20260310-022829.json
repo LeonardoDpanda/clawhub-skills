@@ -1,0 +1,97 @@
+{"timestamp":"2026-03-10T02:29:08+08:00","total":32,"successful":0,"existing":0,"failed":32,"published":[],"existing":[],"failed":[Publishing: regex-tester (Regex Tester)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"regex-tester","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: data-format-converter (Data Format Converter)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"data-format-converter","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: coze-web-search (Coze Web Search)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"coze-web-search","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: json-schema-validator (Json Schema Validator)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"json-schema-validator","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: json-path-query (Json Path Query)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"json-path-query","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: meeting-summarizer (Meeting Summarizer)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"meeting-summarizer","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: url-encoder (Url Encoder)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"url-encoder","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: image-reader (Image Reader)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"image-reader","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: rest-api-tester (Rest Api Tester)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"rest-api-tester","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: password-generator (Password Generator)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"password-generator","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: ssl-certificate-checker (Ssl Certificate Checker)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"ssl-certificate-checker","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: config-format-converter (Config Format Converter)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"config-format-converter","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: docker-compose-validator (Docker Compose Validator)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"docker-compose-validator","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: qr-code-tool (Qr Code Tool)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"qr-code-tool","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: website-monitor (Website Monitor)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"website-monitor","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: base64-toolkit (Base64 Toolkit)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"base64-toolkit","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: csv-processor (Csv Processor)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"csv-processor","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: cron-expression-parser (Cron Expression Parser)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"cron-expression-parser","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: batch-file-renamer (Batch File Renamer)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"batch-file-renamer","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: sql-formatter (Sql Formatter)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"sql-formatter","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: text-diff-comparator (Text Diff Comparator)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"text-diff-comparator","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: coze-voice-gen (Coze Voice Gen)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"coze-voice-gen","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: url-shortener-expander (Url Shortener Expander)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"url-shortener-expander","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: skill-auto-publisher (Skill Auto Publisher)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"skill-auto-publisher","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: system-health-check (System Health Check)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"system-health-check","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: youtube-title-optimizer (Youtube Title Optimizer)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"youtube-title-optimizer","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: http-headers-analyzer (Http Headers Analyzer)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"http-headers-analyzer","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: color-code-converter (Color Code Converter)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"color-code-converter","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: coze-image-gen (Coze Image Gen)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"coze-image-gen","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: jwt-token-inspector (Jwt Token Inspector)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"jwt-token-inspector","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: csv-data-analyzer (Csv Data Analyzer)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"csv-data-analyzer","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"},Publishing: markdown-formatter (Markdown Formatter)
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more
+{"name":"markdown-formatter","status":"failed","code":400,"error":"Publish payload: files.0.sha256: invalid value; files.0.storageId: invalid value; slug: invalid value; +1 more"}]}

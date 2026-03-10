@@ -1,11 +1,19 @@
 ---
 name: config-format-converter
-description: Convert and validate configuration files between JSON, YAML, and TOML formats. Use when working with config files that need format conversion, syntax validation, or pretty-printing. Supports package.json, pyproject.toml, .yaml/.yml configs, and any structured data files. Ideal for cross-platform project setup, CI/CD config migration, and developer tooling workflows.
+title: "Config Format Converter - JSON/YAML/TOML Conversion Tool"
+description: "Convert and validate configuration files between JSON, YAML, and TOML formats instantly. CLI tool for DevOps and developers."
+keywords: ["json to yaml", "yaml to json", "toml converter", "config file converter", "devops tools", "cli config tools", "json yaml toml", "configuration converter"]
 ---
 
-# Config Format Converter
+# ⚡ Config Format Converter
+
+> **3秒搞定配置文件格式转换 —— 告别手动复制粘贴错误**
 
 Universal configuration file format converter for JSON, YAML, and TOML.
+
+[![Gumroad](https://img.shields.io/badge/Upgrade%20to%20Pro-$5-blue?style=for-the-badge)](https://9708247063907.gumroad.com/l/qpaweb)
+
+---
 
 ## When to Use
 
@@ -14,6 +22,8 @@ Universal configuration file format converter for JSON, YAML, and TOML.
 - Normalizing config files for cross-platform projects
 - Validating syntax before committing config changes
 - Pretty-printing minified config files
+
+---
 
 ## ⚡ 版本对比
 
@@ -27,19 +37,16 @@ Universal configuration file format converter for JSON, YAML, and TOML.
 | 自定义转换模板 | ❌ | ✅ | ✅ |
 | 私有化部署 | ❌ | ❌ | ✅ |
 | SLA 技术支持 | ❌ | ❌ | ✅ |
-| **价格** | **免费** | **¥29/月** | **联系销售** |
+| **价格** | **免费** | **$5 一次性** | **联系销售** |
+
+---
 
 ## 🚀 升级到专业版
 
 ### 购买授权码
 
-1. **微信/支付宝支付**
-   - 扫码支付 → 自动发送授权码到邮箱
-   - [点击购买 ¥29/月](https://your-store.com/buy?plan=pro)
-   - [点击购买 ¥199/年（省17%）](https://your-store.com/buy?plan=pro-yearly)
-
-2. **国际支付（Stripe/PayPal）**
-   - [Gumroad 购买 $5/月](https://9708247063907.gumroad.com/l/qpaweb)
+**国际支付（Stripe/PayPal）**
+- **[🛒 Gumroad 购买 $5](https://9708247063907.gumroad.com/l/qpaweb)**
 
 ### 激活授权
 
@@ -50,6 +57,8 @@ clawhub config set config-format-converter.license "YOUR_LICENSE_KEY"
 # 验证激活状态
 clawhub config get config-format-converter.license
 ```
+
+---
 
 ## Quick Start
 
@@ -120,6 +129,8 @@ def validate_yaml(filepath):
         return False, str(e)
 ```
 
+---
+
 ## Common Workflows
 
 ### Migrate npm Project to Python Poetry
@@ -150,14 +161,46 @@ with open('pyproject.toml', 'w') as f:
     toml.dump(pyproject, f)
 ```
 
+---
+
 ## Dependencies
 
 ```bash
 pip install pyyaml toml
 ```
 
-## Support
+---
+
+## 💎 Pro Version Benefits
+
+- **⚡ Batch Processing** — Convert entire directories at once
+- **🔄 Advanced Formats** — XML, INI, Properties file support
+- **🌐 API Integration** — Programmatic access for CI/CD
+- **🎨 Custom Templates** — Define your own conversion rules
+- **📧 Priority Support** — Get help when you need it
+- **🏢 Commercial License** — Use in commercial projects
+
+**[🛒 Get Pro Now - $5](https://9708247063907.gumroad.com/l/qpaweb)**
+
+---
+
+## 🤝 Support
 
 - 📧 邮箱: support@your-domain.com
 - 💬 微信: YourWeChatID
 - 📖 文档: https://docs.your-domain.com
+- 🐛 [GitHub Issues](../../issues)
+
+---
+
+## Related Tools
+
+- **[REST API Tester](https://9708247063907.gumroad.com/l/pzksc)** — Test APIs without leaving the terminal
+- **[Batch File Renamer](https://9708247063907.gumroad.com/l/arybl)** — Rename files in bulk
+- **[QR Code Toolkit](https://9708247063907.gumroad.com/l/lompxr)** — Generate professional QR codes
+
+---
+
+<p align="center">
+  <strong>⭐ Star this repo if it helps you!</strong>
+</p>

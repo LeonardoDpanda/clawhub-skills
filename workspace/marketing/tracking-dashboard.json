@@ -1,0 +1,105 @@
+{
+  "trackingConfig": {
+    "version": "1.0",
+    "createdAt": "2026-03-10",
+    "updateFrequency": "hourly"
+  },
+  "metrics": {
+    "traffic": {
+      "github": {
+        "repoViews": null,
+        "uniqueVisitors": null,
+        "stars": null,
+        "clones": null,
+        "referrers": []
+      },
+      "clawhub": {
+        "skillViews": {},
+        "installs": {},
+        "searchAppearances": {}
+      },
+      "gumroad": {
+        "productViews": {},
+        "uniqueVisitors": {},
+        "conversionRate": null,
+        "revenue": 0
+      },
+      "social": {
+        "reddit": {
+          "posts": [],
+          "upvotes": 0,
+          "comments": 0,
+          "ctr": null
+        },
+        "hackernews": {
+          "posts": [],
+          "points": 0,
+          "comments": 0,
+          "rank": null
+        },
+        "twitter": {
+          "impressions": 0,
+          "engagements": 0,
+          "clicks": 0
+        }
+      }
+    },
+    "conversion": {
+      "funnel": {
+        "impressions": 0,
+        "clicks": 0,
+        "productPageViews": 0,
+        "addToCart": 0,
+        "purchases": 0
+      },
+      "byProduct": {
+        "config-format-converter": {
+          "views": 0,
+          "purchases": 0,
+          "revenue": 0
+        },
+        "batch-file-renamer": {
+          "views": 0,
+          "purchases": 0,
+          "revenue": 0
+        },
+        "qr-code-tool": {
+          "views": 0,
+          "purchases": 0,
+          "revenue": 0
+        },
+        "rest-api-tester": {
+          "views": 0,
+          "purchases": 0,
+          "revenue": 0
+        }
+      }
+    }
+  },
+  "targets": {
+    "week1": {
+      "gumroadViews": 100,
+      "githubStars": 20,
+      "socialPosts": 10,
+      "revenue": 10
+    },
+    "week2": {
+      "gumroadViews": 300,
+      "githubStars": 50,
+      "conversionRate": 0.02,
+      "revenue": 30
+    },
+    "month1": {
+      "gumroadViews": 1000,
+      "githubStars": 100,
+      "totalSales": 10,
+      "revenue": 50
+    }
+  },
+  "trackingMethods": {
+    "github": "GitHub API + Insights tab",
+    "gumroad": "Gumroad Analytics dashboard",
+    "clawhub": "ClawHub dashboard (if available)",
+    "social": "Native platform analytics + UTM links"
+  }
+}

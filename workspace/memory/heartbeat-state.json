@@ -1,16 +1,32 @@
 {
-  "lastDailySkillRun": "2026-03-04",
-  "lastCheckTime": "2026-03-05T17:56:00",
+  "lastDailySkillRun": "2026-03-10",
+  "currentBatch": {
+    "batchId": "batch-2026-03-10",
+    "triggeredAt": "2026-03-10T01:22:00",
+    "status": "completed",
+    "skillsGenerated": 5,
+    "error": null
+  },
+  "lastCheckTime": "2026-03-10T11:15:00",
   "dailyRunEnabled": true,
+  "experimentPhase": "parallel_validation",
   "config": {
     "timezone": "Asia/Shanghai",
     "runHour": 1,
     "runMinute": 0
   },
-  "currentBatch": {
-    "batchId": "batch-2026-03-05",
-    "triggeredAt": "2026-03-05T01:19:00",
-    "status": "failed",
-    "error": "Gateway not connected - pairing required"
+  "previousBatch": {
+    "batchId": "batch-2026-03-08",
+    "triggeredAt": "2026-03-08T01:04:00",
+    "status": "completed",
+    "skillsGenerated": 5,
+    "error": null
+  },
+  "promotionStatus": {
+    "redditPostsToday": 0,
+    "redditTarget": 3,
+    "gumroadProductsLive": 4,
+    "gumroadProductsPending": 31,
+    "clawhubPublishedToday": 1
   }
 }

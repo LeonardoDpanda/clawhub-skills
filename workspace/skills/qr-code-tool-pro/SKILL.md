@@ -1,11 +1,19 @@
 ---
 name: qr-code-tool
-description: Generate QR codes for URLs, text, WiFi credentials, contact cards, and more. Use when creating scannable links for marketing materials, sharing WiFi passwords, generating business cards, or creating quick access to digital content. Supports custom styling, error correction levels, and multiple export formats.
+title: "QR Code Toolkit Pro - Professional QR Generator"
+description: "Generate professional QR codes for URLs, WiFi credentials, contact cards, and more. No ads, custom styling, bulk generation."
+keywords: ["qr code generator", "wifi qr code", "vcard qr code", "custom qr code", "bulk qr generator", "qr code no watermark", "professional qr code"]
 ---
 
-# QR Code Tool
+# 📱 QR Code Toolkit Pro
 
-Create QR codes for URLs, WiFi, contacts, and more.
+> **专业二维码生成器 —— 营销、支付、WiFi分享全搞定**
+
+Create professional QR codes for URLs, WiFi, contacts, and more. No ads, no tracking, your data stays yours.
+
+[![Gumroad](https://img.shields.io/badge/Upgrade%20to%20Pro-$4-blue?style=for-the-badge)](https://9708247063907.gumroad.com/l/lompxr)
+
+---
 
 ## When to Use
 
@@ -15,6 +23,8 @@ Create QR codes for URLs, WiFi, contacts, and more.
 - Creating quick app download links
 - Sharing locations or maps
 - Event check-in codes
+
+---
 
 ## ⚡ 版本对比
 
@@ -27,14 +37,16 @@ Create QR codes for URLs, WiFi, contacts, and more.
 | WiFi自动连接码 | ❌ | ✅ |
 | 名片(vCard) | ❌ | ✅ |
 | 批量生成 | ❌ | ✅ |
-| 高清PNG导出 | ❌ | ✅ |
+| 高清PNG/SVG导出 | ❌ | ✅ |
 | **价格** | **免费** | **$4 一次性** |
+
+---
 
 ## 🚀 升级到专业版
 
 ### 购买授权码
 
-- [Gumroad 购买 $4](https://9708247063907.gumroad.com/l/lompxr)
+- **[🛒 Gumroad 购买 $4](https://9708247063907.gumroad.com/l/lompxr)**
 
 ### 激活授权
 
@@ -45,6 +57,8 @@ clawhub config set qr-code-tool.license "YOUR_LICENSE_KEY"
 # 验证激活状态
 clawhub config get qr-code-tool.license
 ```
+
+---
 
 ## Quick Start
 
@@ -135,6 +149,8 @@ generate_styled_qr('https://mysite.com', 'blue_qr.png',
                    fill_color='blue', back_color='lightblue')
 ```
 
+---
+
 ## Error Correction Levels
 
 | Level | Correction | Use Case |
@@ -144,8 +160,56 @@ generate_styled_qr('https://mysite.com', 'blue_qr.png',
 | Q | ~25% | Dirty/damaged possible |
 | H | ~30% | Logos/overlays on QR |
 
+---
+
 ## Dependencies
 
 ```bash
 pip install qrcode[pil]
 ```
+
+---
+
+## 💎 Pro Version Benefits
+
+- **🎨 Custom Styling** — Colors, shapes, eye patterns
+- **🏷️ Logo Support** — Add your brand logo to QR codes
+- **📶 WiFi Codes** — Instant WiFi connection QR codes
+- **👤 vCard Support** — Digital business cards
+- **📊 Batch Generation** — Generate hundreds at once
+- **🖼️ HD Export** — PNG, SVG, PDF formats
+- **📧 Priority Support** — Get help when you need it
+- **🏢 Commercial License** — Use in commercial projects
+
+**[🛒 Get Pro Now - $4](https://9708247063907.gumroad.com/l/lompxr)**
+
+---
+
+## Use Cases
+
+- 🏪 **实体店** — WiFi二维码贴桌上
+- 💼 **商务** — 电子名片二维码
+- 🎟️ **活动** — 门票/签到二维码批量生成
+- 💰 **个人** — 收款码美化
+
+---
+
+## 🤝 Support
+
+- 📧 邮箱: support@your-domain.com
+- 💬 微信: YourWeChatID
+- 🐛 [GitHub Issues](../../issues)
+
+---
+
+## Related Tools
+
+- **[Config Format Converter](https://9708247063907.gumroad.com/l/qpaweb)** — Convert JSON/YAML/TOML configs
+- **[Batch File Renamer](https://9708247063907.gumroad.com/l/arybl)** — Rename files in bulk
+- **[REST API Tester](https://9708247063907.gumroad.com/l/pzksc)** — Test APIs without leaving the terminal
+
+---
+
+<p align="center">
+  <strong>⭐ Star this repo if it helps you!</strong>
+</p>

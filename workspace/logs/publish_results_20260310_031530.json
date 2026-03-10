@@ -1,0 +1,8 @@
+{
+  "publishDate": "2026-03-10T03:16:19+08:00",
+  "totalAttempted": 15,
+  "successfulCount": 0,
+  "failedCount": 15,
+  "successful": ["],
+  "failed": [\n    - config-format-converter-pro (HTTP 400)\n    - batch-file-renamer-pro (HTTP 400)\n    - qr-code-tool-pro (HTTP 400)\n    - rest-api-tester-pro (HTTP 400)\n    - http-headers-analyzer-pro (HTTP 400)\n    - json-path-query-pro (HTTP 400)\n    - youtube-title-optimizer (HTTP 400)\n    - image-reader (HTTP 400)\n    - coze-image-gen (HTTP 400)\n    - skill-auto-publisher (HTTP 400)\n    - docker-compose-validator-pro (HTTP 400)\n    - coze-voice-gen (HTTP 400)\n    - coze-web-search (HTTP 400)\n    - cron-expression-parser-pro (HTTP 400)\n    - ssl-certificate-checker-pro (HTTP 400)]
+}

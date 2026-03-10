@@ -1,0 +1,97 @@
+{"timestamp":"2026-03-10T02:30:39+08:00","total":32,"successful":0,"existing":0,"failed":32,"published":[],"existing":[],"failed":[Publishing: regex-tester
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"regex-tester","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: data-format-converter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"data-format-converter","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: coze-web-search
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"coze-web-search","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: json-schema-validator
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"json-schema-validator","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: json-path-query
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"json-path-query","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: meeting-summarizer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"meeting-summarizer","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: url-encoder
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"url-encoder","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: image-reader
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"image-reader","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: rest-api-tester
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"rest-api-tester","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: password-generator
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"password-generator","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: ssl-certificate-checker
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"ssl-certificate-checker","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: config-format-converter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"config-format-converter","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: docker-compose-validator
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"docker-compose-validator","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: qr-code-tool
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"qr-code-tool","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: website-monitor
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"website-monitor","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: base64-toolkit
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"base64-toolkit","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: csv-processor
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"csv-processor","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: cron-expression-parser
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"cron-expression-parser","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: batch-file-renamer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"batch-file-renamer","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: sql-formatter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"sql-formatter","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: text-diff-comparator
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"text-diff-comparator","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: coze-voice-gen
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"coze-voice-gen","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: url-shortener-expander
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"url-shortener-expander","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: skill-auto-publisher
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"skill-auto-publisher","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: system-health-check
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"system-health-check","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: youtube-title-optimizer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"youtube-title-optimizer","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: http-headers-analyzer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"http-headers-analyzer","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: color-code-converter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"color-code-converter","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: coze-image-gen
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"coze-image-gen","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: jwt-token-inspector
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"jwt-token-inspector","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: csv-data-analyzer
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"csv-data-analyzer","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"},Publishing: markdown-formatter
+  HTTP Code: 400
+  ✗ Failed (400): Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object
+{"name":"markdown-formatter","status":"failed","code":400,"error":"Publish payload: files.0.storageId: invalid value; slug: invalid value; source: an object"}]}

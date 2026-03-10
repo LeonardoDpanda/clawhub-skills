@@ -1,0 +1,383 @@
+{
+  "timestamp": "2026-03-10T02:22:22.670922",
+  "apiToken": "clh_1fCyGA...",
+  "apiUrl": "https://api.clawhub.com/v1/skills",
+  "total": 35,
+  "ready": 30,
+  "failed": 5,
+  "phase1Ready": 4,
+  "phase2Ready": 26,
+  "results": [
+    {
+      "name": "config-format-converter",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/config-format-converter",
+      "phase": 1,
+      "category": "免费版(已有付费版)",
+      "contentSize": 4747,
+      "encodedSize": 6868,
+      "path": "/workspace/projects/workspace/skills/config-format-converter-pro/SKILL.md"
+    },
+    {
+      "name": "batch-file-renamer",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/batch-file-renamer",
+      "phase": 1,
+      "category": "免费版(已有付费版)",
+      "contentSize": 5262,
+      "encodedSize": 7528,
+      "path": "/workspace/projects/workspace/skills/batch-file-renamer-pro/SKILL.md"
+    },
+    {
+      "name": "qr-code-tool",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/qr-code-tool",
+      "phase": 1,
+      "category": "免费版(已有付费版)",
+      "contentSize": 5024,
+      "encodedSize": 7280,
+      "path": "/workspace/projects/workspace/skills/qr-code-tool-pro/SKILL.md"
+    },
+    {
+      "name": "rest-api-tester",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/rest-api-tester",
+      "phase": 1,
+      "category": "免费版(已有付费版)",
+      "contentSize": 12063,
+      "encodedSize": 16092,
+      "path": "/workspace/projects/workspace/skills/rest-api-tester-pro/SKILL.md"
+    },
+    {
+      "name": "password-generator",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/password-generator",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 2979,
+      "encodedSize": 3984,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-1/01-password-generator_SKILL.md"
+    },
+    {
+      "name": "csv-processor",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/csv-processor",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 4921,
+      "encodedSize": 6580,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-1/02-csv-processor_SKILL.md"
+    },
+    {
+      "name": "markdown-formatter",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/markdown-formatter",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 5320,
+      "encodedSize": 7180,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-1/03-markdown-formatter_SKILL.md"
+    },
+    {
+      "name": "system-health-check",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/system-health-check",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 5199,
+      "encodedSize": 7352,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-1/04-system-health-check_SKILL.md"
+    },
+    {
+      "name": "url-encoder",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/url-encoder",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 5481,
+      "encodedSize": 7636,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-1/05-url-encoder_SKILL.md"
+    },
+    {
+      "name": "csv-data-analyzer",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/csv-data-analyzer",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 8121,
+      "encodedSize": 10980,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-2/csv-data-analyzer_SKILL.md"
+    },
+    {
+      "name": "json-schema-validator",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/json-schema-validator",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 11131,
+      "encodedSize": 14856,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-2/json-schema-validator_SKILL.md"
+    },
+    {
+      "name": "password-generator-v2",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/password-generator-v2",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 6445,
+      "encodedSize": 8604,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-2/password-generator_SKILL.md"
+    },
+    {
+      "name": "text-diff-comparator",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/text-diff-comparator",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 8554,
+      "encodedSize": 11492,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-2/text-diff-comparator_SKILL.md"
+    },
+    {
+      "name": "url-shortener-expander",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/url-shortener-expander",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 8941,
+      "encodedSize": 11924,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-05-2/url-shortener-expander_SKILL.md"
+    },
+    {
+      "name": "regex-tester",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/regex-tester",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 2980,
+      "encodedSize": 3980,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-09/01-regex-tester_SKILL.md"
+    },
+    {
+      "name": "color-code-converter",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/color-code-converter",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 3861,
+      "encodedSize": 5156,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-09/02-color-code-converter_SKILL.md"
+    },
+    {
+      "name": "base64-toolkit",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/base64-toolkit",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 3996,
+      "encodedSize": 5328,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-09/03-base64-toolkit_SKILL.md"
+    },
+    {
+      "name": "jwt-token-inspector",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/jwt-token-inspector",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 4883,
+      "encodedSize": 6528,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-09/04-jwt-token-inspector_SKILL.md"
+    },
+    {
+      "name": "sql-formatter",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/sql-formatter",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 4860,
+      "encodedSize": 6488,
+      "path": "/workspace/projects/workspace/skills/batch-2026-03-09/05-sql-formatter_SKILL.md"
+    },
+    {
+      "name": "meeting-summarizer",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/meeting-summarizer",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 2843,
+      "encodedSize": 3820,
+      "path": "/workspace/projects/workspace/skills/01-meeting-summarizer_SKILL.md"
+    },
+    {
+      "name": "data-format-converter",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/data-format-converter",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 4916,
+      "encodedSize": 6628,
+      "path": "/workspace/projects/workspace/skills/02-data-format-converter_SKILL.md"
+    },
+    {
+      "name": "website-monitor",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/website-monitor",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 6673,
+      "encodedSize": 8908,
+      "path": "/workspace/projects/workspace/skills/03-website-monitor_SKILL.md"
+    },
+    {
+      "name": "batch-file-renamer-pro",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/batch-file-renamer-pro",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 7440,
+      "encodedSize": 9928,
+      "path": "/workspace/projects/workspace/skills/04-batch-file-renamer_SKILL.md"
+    },
+    {
+      "name": "rest-api-tester-pro",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/rest-api-tester-pro",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 9930,
+      "encodedSize": 13256,
+      "path": "/workspace/projects/workspace/skills/05-rest-api-tester_SKILL.md"
+    },
+    {
+      "name": "image-reader",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/image-reader",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 946,
+      "encodedSize": 1432,
+      "path": "/workspace/projects/workspace/skills/image-reader/SKILL.md"
+    },
+    {
+      "name": "coze-image-gen",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/coze-image-gen",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 1900,
+      "encodedSize": 2540,
+      "path": "/workspace/projects/workspace/skills/coze-image-gen/SKILL.md"
+    },
+    {
+      "name": "coze-voice-gen",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/coze-voice-gen",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 3635,
+      "encodedSize": 4860,
+      "path": "/workspace/projects/workspace/skills/coze-voice-gen/SKILL.md"
+    },
+    {
+      "name": "coze-web-search",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/coze-web-search",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 2837,
+      "encodedSize": 3788,
+      "path": "/workspace/projects/workspace/skills/coze-web-search/SKILL.md"
+    },
+    {
+      "name": "skill-auto-publisher",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/skill-auto-publisher",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 8870,
+      "encodedSize": 13028,
+      "path": "/workspace/projects/workspace/skills/skill-auto-publisher/SKILL.md"
+    },
+    {
+      "name": "youtube-title-optimizer",
+      "status": "准备就绪(API待连接)",
+      "reason": "内容已编码，等待API可用",
+      "clawhubUrl": "https://clawhub.com/skills/youtube-title-optimizer",
+      "phase": 2,
+      "category": "待变现",
+      "contentSize": 6695,
+      "encodedSize": 9016,
+      "path": "/workspace/projects/workspace/skills/youtube-title-optimizer/SKILL.md"
+    },
+    {
+      "name": "ssl-certificate-checker",
+      "status": "失败",
+      "reason": "文件仅存在于GitHub",
+      "clawhubUrl": null,
+      "phase": 2,
+      "category": "待变现(仅GitHub)"
+    },
+    {
+      "name": "http-headers-analyzer",
+      "status": "失败",
+      "reason": "文件仅存在于GitHub",
+      "clawhubUrl": null,
+      "phase": 2,
+      "category": "待变现(仅GitHub)"
+    },
+    {
+      "name": "cron-expression-parser",
+      "status": "失败",
+      "reason": "文件仅存在于GitHub",
+      "clawhubUrl": null,
+      "phase": 2,
+      "category": "待变现(仅GitHub)"
+    },
+    {
+      "name": "docker-compose-validator",
+      "status": "失败",
+      "reason": "文件仅存在于GitHub",
+      "clawhubUrl": null,
+      "phase": 2,
+      "category": "待变现(仅GitHub)"
+    },
+    {
+      "name": "json-path-query",
+      "status": "失败",
+      "reason": "文件仅存在于GitHub",
+      "clawhubUrl": null,
+      "phase": 2,
+      "category": "待变现(仅GitHub)"
+    }
+  ],
+  "note": "ClawHub API端点(api.clawhub.com)当前不可用(NXDOMAIN)。所有可用Skills的内容已读取并base64编码，当API可用时可立即提交。"
+}

@@ -23,12 +23,34 @@ GUMROAD_API = "https://api.gumroad.com/v2"
 REGISTRY_PATH = "memory/skill-registry.json"
 
 def get_access_token():
-    """Get Gumroad access token"""
+    """Get Gumroad access token from env or config"""
+    # First try env variable
     token = os.getenv("GUMROAD_ACCESS_TOKEN")
-    if not token:
-        print("❌ GUMROAD_ACCESS_TOKEN not set")
-        sys.exit(1)
-    return token
+    if token:
+        return token
+    
+    # Try to load from config file
+    config_paths = [
+        "config/secrets/gumroad-api.json",
+        "../config/secrets/gumroad-api.json",
+        "../../config/secrets/gumroad-api.json"
+    ]
+    
+    for path in config_paths:
+        if os.path.exists(path):
+            try:
+                with open(path, 'r') as f:
+                    config = json.load(f)
+                    # Use application_secret as access token for OAuth apps
+                    if "application_secret" in config:
+                        print(f"🔑 Loaded credentials from {path}")
+                        return config["application_secret"]
+            except Exception as e:
+                print(f"⚠️  Failed to load {path}: {e}")
+                continue
+    
+    print("❌ GUMROAD_ACCESS_TOKEN not set and config file not found")
+    sys.exit(1)
 
 def load_registry():
     """Load skill registry"""

@@ -1,0 +1,59 @@
+name: Batch Create Gumroad Products
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'Number of products to create (max 22)'
+        required: false
+        default: '10'
+        type: string
+      
+  schedule:
+    - cron: '0 3 * * *'  # 每天凌晨3点 UTC (北京时间11点)
+
+jobs:
+  create-gumroad-products:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        repository: LeonardoDpanda/clawhub-skills
+        token: ${{ secrets.GH_PAT }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install requests
+        
+    - name: Batch create Gumroad products
+      env:
+        GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+        BATCH_SIZE: ${{ github.event.inputs.batch_size || '10' }}
+      run: |
+        echo "Creating up to $BATCH_SIZE Gumroad products..."
+        python scripts/batch_gumroad_creator.py --batch-size $BATCH_SIZE
+        
+    - name: Update registry
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add memory/skill-registry.json
+        git diff --cached --quiet || git commit -m "Update registry after Gumroad batch creation [skip ci]"
+        git push
+        
+    - name: Upload results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: gumroad-creation-results
+        path: |
+          logs/gumroad-batch-result.json
+          logs/gumroad-batch-pending.md
+        retention-days: 30

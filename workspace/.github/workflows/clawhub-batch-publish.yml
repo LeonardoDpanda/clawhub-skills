@@ -1,0 +1,62 @@
+name: Batch Publish to ClawHub
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run mode (test without actual publishing)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+  
+  schedule:
+    - cron: '0 2 * * *'  # 每天凌晨2点 UTC (北京时间10点)
+
+jobs:
+  publish-to-clawhub:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        repository: LeonardoDpanda/clawhub-skills
+        token: ${{ secrets.GH_PAT }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install requests pyyaml
+        
+    - name: Batch publish Skills to ClawHub
+      env:
+        CLAWHUB_API_TOKEN: ${{ secrets.CLAWHUB_API_TOKEN }}
+        CLAWHUB_EMAIL: ${{ secrets.CLAWHUB_EMAIL }}
+        CLAWHUB_PASSWORD: ${{ secrets.CLAWHUB_PASSWORD }}
+        DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+      run: |
+        echo "Starting ClawHub batch publication..."
+        python scripts/clawhub_batch_publish_v2.py
+        
+    - name: Update registry
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add memory/skill-registry.json
+        git diff --cached --quiet || git commit -m "Update registry after ClawHub batch publish [skip ci]"
+        git push
+        
+    - name: Upload logs
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: clawhub-publish-logs
+        path: logs/
+        retention-days: 30

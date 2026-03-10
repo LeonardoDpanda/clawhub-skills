@@ -1,0 +1,63 @@
+name: Auto Post to Reddit
+
+on:
+  workflow_dispatch:
+    inputs:
+      subreddits:
+        description: 'Comma-separated list of subreddits to post to'
+        required: false
+        default: 'commandline,webdev,selfhosted'
+        type: string
+      
+  schedule:
+    - cron: '0 13 * * *'  # 每天下午1点 UTC (北京时间晚上9点，美国早上)
+
+jobs:
+  post-to-reddit:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        repository: LeonardoDpanda/clawhub-skills
+        token: ${{ secrets.GH_PAT }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install playwright praw
+        playwright install firefox
+        
+    - name: Auto post to Reddit
+      env:
+        REDDIT_USERNAME: ${{ secrets.REDDIT_USERNAME }}
+        REDDIT_PASSWORD: ${{ secrets.REDDIT_PASSWORD }}
+        REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+        REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+        SUBREDDITS: ${{ github.event.inputs.subreddits || 'commandline,webdev,selfhosted' }}
+      run: |
+        echo "Posting to subreddits: $SUBREDDITS"
+        python scripts/reddit_autoposter.py --subreddits "$SUBREDDITS"
+        
+    - name: Update heartbeat state
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add memory/heartbeat-state.json
+        git diff --cached --quiet || git commit -m "Update Reddit post status [skip ci]"
+        git push
+        
+    - name: Upload screenshots and logs
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: reddit-post-evidence
+        path: |
+          screenshots/
+          memory/reddit-autopost-report-*.md
+        retention-days: 7
